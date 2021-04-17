@@ -5,21 +5,28 @@ const Overview = () => {
     return (
         <div className="overview">
             <div className="safe5">
-                <p>haha</p>
-                <p>haha</p>
-                <p>haha</p>
-                <p>haha</p>
-                <p>haha</p>
+                <h1>5 nejbezpečnějších zemí</h1>
+                <p>Zapadákov</p>
+                <p>SSSR</p>
+                <p>Prusko</p>
+                <p>Jugoslávie</p>
+                <p>Rakousko-Uhersko</p>
             </div>
             <div className="dangerous5">
-                <p>bebe</p>
-                <p>bebe</p>
-                <p>bebe</p>
-                <p>bebe</p>
-                <p>bebe</p>
+                <h1>5 nejnebezpečnějších zemí</h1>
+                <p>Amerikaaa</p>
+                <p>Akirema</p>
+                <p>Kanada</p>
+                <p>USA</p>
+                <p>Mexiko</p>
             </div>
             <div className="died">
+                <h1>počet úmrtí</h1>
                 <p>4328742343728</p>
+            </div>
+            <div className="RNumber">
+                <h1>Reprodukční číslo</h1>
+                <p>2.354</p>
             </div>
         </div>
     );

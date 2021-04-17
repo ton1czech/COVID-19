@@ -34,6 +34,7 @@ body {
     animation-name: icon_arrow_animation;
     animation-duration: 2s;
     animation-iteration-count: infinite;
+    cursor: pointer;
 }
 
 @keyframes icon_arrow_animation {
