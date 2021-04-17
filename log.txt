@@ -6,3 +6,5 @@
 17.04.2021, 17:15 - plně funkční mapa
 17.04.2021, 17:55 - větší designové úpravy
 18.04.2021, 00:37 - zvětšení ikon v README
+18.04.2021, 00:41 - pročištění souborů
+18.04.2021, 00:58 - zvětšení levého informačního sloupce
