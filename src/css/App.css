@@ -1,0 +1,46 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+body {
+    background-color: whitesmoke;
+}
+
+.app {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.app_leftbar {
+    flex: 0.11;
+    padding-right: 70px;
+}
+
+.icon_arrow {
+    position: absolute;
+    bottom: 35px;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, 50%);
+    animation-name: icon_arrow_animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+}
+
+@keyframes icon_arrow_animation {
+    from {
+        bottom: 35px;
+    }
+    to {
+        bottom: 20px;
+    }
+}

@@ -1,2 +1,7 @@
-17. 04. 2021, 15:20 - vytvoření projektu
-17. 04. 2021, 15:40 - README
+17.04.2021, 15:20 - vytvoření projektu
+17.04.2021, 15:41 - README
+17.04.2021, 16:17 - levý informační sloupec
+17.04.2021, 16:32 - flex layout 
+17.04.2021, 16:46 - chatbot ikona
+17.04.2021, 17:15 - plně funkční mapa
+17.04.2021, 17:55 - větší designové úpravy

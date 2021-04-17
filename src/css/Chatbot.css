@@ -1,0 +1,12 @@
+.chatbot {
+    position: fixed;
+    z-index: 999;
+    right: 0;
+    bottom: 0;
+    margin: 13px;
+    cursor: pointer;
+}
+
+.icon_face {
+    color: rgb(102, 51, 153);
+}
