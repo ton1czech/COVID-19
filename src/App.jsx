@@ -9,10 +9,10 @@ import Graphs from './Graphs';
 function App() {
   return (
     <div className="app">
-      <div className="app_leftbar column left">
+      <div className="app_leftbar">
         <Overview />
       </div>
-      <div className="app_main column middle">
+      <div className="app_main">
         <Map />
         <div className="icon_arrow">
           <ArrowDownwardIcon style={{ fontSize: 50 }} />
@@ -20,7 +20,7 @@ function App() {
 
         <Graphs />
       </div>
-      <div className="app_chatbot column right">
+      <div className="app_chatbot">
         <Chatbot />
       </div>
     </div>

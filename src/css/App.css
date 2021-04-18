@@ -21,8 +21,22 @@ body {
 }
 
 .app_leftbar {
-    flex: 0.11;
+    display: flex;
+    flex: 0.145;
     padding-right: 70px;
+    height: 100vh;
+    background-color: grey;
+    margin-right: 2.5%;
+}
+
+.app_main {
+    flex: 0.75;
+    height: max-content;
+}
+
+.app_chatbot {
+    flex: 0.055;
+    margin-left: 2.5%;
 }
 
 .icon_arrow {

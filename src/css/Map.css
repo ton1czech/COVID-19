@@ -1,8 +1,8 @@
 @import '~leaflet/dist/leaflet.css';
 
 .map {
-    height: 900px;
-    width: 1420px;
+    height: 90vh;
+    width: 74vw;
     margin-top: 20px;
     border: 5px solid black;
 }
