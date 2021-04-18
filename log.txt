@@ -9,3 +9,5 @@
 18.04.2021, 00:41 - pročištění souborů
 18.04.2021, 00:58 - zvětšení levého informačního sloupce
 18.04.2021, 14:02 - změna souborů z .js na .jsx
+18.04.2021, 18:03 - upravení manifest.json
+18.04.2021, 18:05 - odstranění useMap
