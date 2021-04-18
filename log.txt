@@ -8,3 +8,4 @@
 18.04.2021, 00:37 - zvětšení ikon v README
 18.04.2021, 00:41 - pročištění souborů
 18.04.2021, 00:58 - zvětšení levého informačního sloupce
+18.04.2021, 14:02 - změna souborů z .js na .jsx
