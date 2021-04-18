@@ -1,5 +1,4 @@
 import './css/App.css';
-import '../node_modules/leaflet/dist/leaflet.css';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 
 import Overview from './Overview';
