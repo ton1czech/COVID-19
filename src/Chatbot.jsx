@@ -6,7 +6,7 @@ const Chatbot = () => {
     return (
         <div className="chatbot">
             <div className="icon_face">
-                <FaceRoundedIcon style={{ fontSize: 55, color: 663399}} />
+                <FaceRoundedIcon class="icon_face_itself" style={{ fill: '#663399' }} />
             </div>
         </div>
     )

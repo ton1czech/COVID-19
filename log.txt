@@ -11,3 +11,7 @@
 18.04.2021, 14:02 - změna souborů z .js na .jsx
 18.04.2021, 18:03 - upravení manifest.json
 18.04.2021, 18:05 - odstranění useMap
+18.04.2021, 20:20 - mapa je responzivní
+18.04.2021, 20:43 - písmo je responzivní
+18.04.2021, 21:32 - chatbot ikona je responzivní
+18.04.2021, 22:02 - na responzivitě šipky se pracuje

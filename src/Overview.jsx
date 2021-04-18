@@ -22,7 +22,7 @@ const Overview = () => {
             </div>
             <div className="died">
                 <h1>počet úmrtí</h1>
-                <p>4328742343728</p>
+                <p>4,328,742</p>
             </div>
             <div className="RNumber">
                 <h1>Reprodukční číslo</h1>

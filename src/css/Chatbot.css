@@ -3,10 +3,11 @@
     z-index: 999;
     right: 0;
     bottom: 0;
-    margin: 13px;
+    margin: 1vw;
     cursor: pointer;
+    color: rgb(102, 51, 153);
 }
 
 .icon_face {
-    color: rgb(102, 51, 153);
+    width: 4vw;
 }

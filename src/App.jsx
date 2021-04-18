@@ -12,14 +12,17 @@ function App() {
       <div className="app_leftbar">
         <Overview />
       </div>
+
       <div className="app_main">
         <Map />
+
         <div className="icon_arrow">
-          <ArrowDownwardIcon style={{ fontSize: 50 }} />
+          <ArrowDownwardIcon class='icon_arrow_itself' />
         </div>
 
         <Graphs />
       </div>
+
       <div className="app_chatbot">
         <Chatbot />
       </div>
