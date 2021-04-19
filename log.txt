@@ -17,3 +17,4 @@
 18.04.2021, 22:02 - na responzivitě šipky se pracuje
 18.04.2021, 22:12 - malá úprava textů 
 19.04.2021, 08:24 - nové logo
+19.04.2021, 11:23 - vylepšení README
