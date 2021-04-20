@@ -12,7 +12,7 @@ Webová aplikace bude sloužit pro souhrnný přehled dat o viru COVID-19, také
 
 ---
 
-## 🙎 Autoři
+## 👩‍💻👨‍💻 Autoři
 
 Daniel Anthony Baudyš:
 
