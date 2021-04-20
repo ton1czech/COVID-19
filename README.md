@@ -4,9 +4,13 @@
 
 Webová aplikace bude sloužit pro souhrnný přehled dat o viru COVID-19, také bude zajišťovat informace o průběhu této nemoci. Bude možné si prohlédnout data všech zemí.
 
+---
+
 ## 🖥️ Technologie
 
 - <img src='https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F09%2FReact_logo_logotype_emblem.png&f=1&nofb=1' height="13"> [React](https://reactjs.org/)
+
+---
 
 ## 🙎 Autoři
 
