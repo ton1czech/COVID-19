@@ -1,63 +1,64 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    -ms-overflow-style: none;
-    scrollbar-width: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
 }
 
 ::-webkit-scrollbar {
-    display: none;
+  display: none;
 }
 
 body {
-    background-color: whitesmoke;
+  background-color: whitesmoke;
 }
 
 .app {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .app_leftbar {
-    display: flex;
-    flex: 0.145;
-    padding-right: 70px;
-    background-color: grey;
-    margin-right: 2.5%;
+  display: flex;
+  flex: 0.145;
+  padding-right: 70px;
+  background-color: grey;
+  margin-right: 2.5%;
 }
 
 .app_main {
-    flex: 0.75;
-    height: max-content;
+  flex: 0.75;
+  height: max-content;
 }
 
 .app_chatbot {
-    flex: 0.055;
-    height: max-content;
-    margin-left: 2.5%;
+  position: fixed;
+  flex: 0.055;
+  height: max-content;
+  margin-left: 2.5%;
 }
 
 .icon_arrow {
-    position: relative;
-    animation-name: icon_arrow_animation;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
+  position: relative;
+  animation-name: icon_arrow_animation;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
 }
 
 .icon_arrow_itself {
-    position: relative;
-    cursor: pointer;
-    left: 29vw;
-    height: 4.5vw;
+  position: relative;
+  cursor: pointer;
+  left: 29vw;
+  height: 4.5vw;
 }
 
 @keyframes icon_arrow_animation {
-    from {
-        bottom: 5px;
-    }
-    to {
-        bottom: -20px;
-    }
+  from {
+    bottom: 5px;
+  }
+  to {
+    bottom: -20px;
+  }
 }
