@@ -1,12 +1,13 @@
-@import '~leaflet/dist/leaflet.css';
+@import "~leaflet/dist/leaflet.css";
 
 .map {
-    height: 90vh;
-    width: 74vw;
-    margin-top: 20px;
-    border: 5px solid black;
+  height: 90vh;
+  width: 74vw;
+  margin-top: 20px;
+  border: 5px solid black;
+  margin-right: 5vw;
 }
 
 .map .leaflet-container {
-    height: 100%;
+  height: 100%;
 }

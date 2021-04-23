@@ -1,5 +1,6 @@
 import "./css/App.css";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
+import PersonIcon from "@material-ui/icons/Person";
 import Chatbot from "react-chatbot-kit";
 
 import Overview from "./Overview";
@@ -7,6 +8,8 @@ import Map from "./Map";
 import Graphs from "./Graphs";
 
 function App() {
+  // TODO clickable icons. hide - show chatbot
+
   return (
     <div className='app'>
       <div className='app_leftbar'>
@@ -24,6 +27,7 @@ function App() {
       </div>
 
       <div className='app_chatbot'>
+        <PersonIcon class='chatbot_icon' />
         <Chatbot class='chatbot' />
       </div>
     </div>

@@ -35,9 +35,23 @@ body {
 
 .app_chatbot {
   position: fixed;
-  flex: 0.055;
-  height: max-content;
   margin-left: 2.5%;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  margin: 10px;
+}
+
+.chatbot_icon {
+  width: 3.5vw;
+  margin-left: 220px;
+  margin-top: 310px;
+  right: 3;
+  bottom: 3;
+}
+
+.hide_show {
+  display: none;
 }
 
 .icon_arrow {
