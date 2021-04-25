@@ -1,27 +1,36 @@
 .overview {
-    position: fixed;
+  position: fixed;
 }
 
 h1 {
-    font-size: 1.2vw;
+  font-size: 1.2vw;
 }
 
 p {
-    font-size: 1vw;
+  font-size: 1vw;
 }
 
 .safe5 {
-    margin: 20px 0 70px 8px;
+  margin: 20px 0 70px 8px;
 }
 
 .dangerous5 {
-    margin: 0 0 70px 8px;
+  margin: 0 0 70px 8px;
 }
 
 .died {
-    margin: 0 0 70px 8px;
+  margin: 0 0 70px 8px;
 }
 
 .RNumber {
-    margin: 0 0 0 8px;
+  margin: 0 0 0 8px;
+}
+
+.forms_icon {
+  padding: 2vw;
+  cursor: pointer;
+}
+
+.forms_icon_itself {
+  width: 12vw;
 }
