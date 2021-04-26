@@ -48,6 +48,7 @@ body {
   margin-top: 310px;
   right: 3;
   bottom: 3;
+  cursor: pointer;
 }
 
 .hide_show {

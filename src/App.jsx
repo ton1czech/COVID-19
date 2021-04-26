@@ -1,4 +1,5 @@
 import "./css/App.css";
+import React, { useState } from "react";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 import PersonIcon from "@material-ui/icons/Person";
 import Chatbot from "react-chatbot-kit";
@@ -8,7 +9,11 @@ import Map from "./Map";
 import Graphs from "./Graphs";
 
 function App() {
-  // TODO clickable icons. hide - show chatbot
+  const [toggleClass, setToggleClass] = useState(false);
+
+  function toggleChatbot() {
+    setToggleClass(!toggleClass);
+  }
 
   return (
     <div className='app'>
