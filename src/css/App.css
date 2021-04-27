@@ -51,7 +51,7 @@ body {
   cursor: pointer;
 }
 
-.hide_show {
+.chatbot {
   display: none;
 }
 
@@ -65,8 +65,8 @@ body {
 .icon_arrow_itself {
   position: relative;
   cursor: pointer;
-  left: 29vw;
-  height: 4.5vw;
+  left: 27vw;
+  height: 4vw;
 }
 
 @keyframes icon_arrow_animation {

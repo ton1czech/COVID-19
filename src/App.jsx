@@ -1,5 +1,5 @@
 import "./css/App.css";
-import React, { useState } from "react";
+import React from "react";
 import ArrowDownwardIcon from "@material-ui/icons/ArrowDownward";
 import PersonIcon from "@material-ui/icons/Person";
 import Chatbot from "react-chatbot-kit";
@@ -9,12 +9,6 @@ import Map from "./Map";
 import Graphs from "./Graphs";
 
 function App() {
-  const [toggleClass, setToggleClass] = useState(false);
-
-  function toggleChatbot() {
-    setToggleClass(!toggleClass);
-  }
-
   return (
     <div className='app'>
       <div className='app_leftbar'>
@@ -25,7 +19,7 @@ function App() {
         <Map />
 
         <div className='icon_arrow'>
-          <ArrowDownwardIcon className='icon_arrow_itself' />
+          <ArrowDownwardIcon class='icon_arrow_itself' />
         </div>
 
         <Graphs />
