@@ -65,13 +65,15 @@ body {
   animation-name: icon_arrow_animation;
   animation-duration: 2s;
   animation-iteration-count: infinite;
+  z-index: 999;
 }
 
 .icon_arrow_itself {
+  display: flex;
   position: relative;
   cursor: pointer;
-  left: 27vw;
-  height: 4vw;
+  width: 5vw;
+  margin: 0 0 0 33vw;
 }
 
 @keyframes icon_arrow_animation {
