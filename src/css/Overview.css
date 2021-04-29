@@ -23,11 +23,19 @@ p {
 }
 
 .RNumber {
+  margin: 0 0 90px 8px;
+}
+
+.forms {
   margin: 0 0 0 8px;
 }
 
+.forms p {
+  font-size: 0.7vw;
+}
+
 .forms_icon {
-  padding: 10vw 5.5vw;
+  padding: 1vw 4.5vw;
   cursor: pointer;
 }
 

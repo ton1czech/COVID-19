@@ -1,5 +1,5 @@
-import React from "react";
-import "./css/Overview.css";
+import React from 'react';
+import './css/Overview.css';
 
 const Overview = () => {
   return (
@@ -28,18 +28,24 @@ const Overview = () => {
         <h1>Reprodukční číslo</h1>
         <p>2.354</p>
       </div>
-      <div className='forms_icon'>
-        <a
-          target='_blank'
-          rel='noreferrer'
-          href='https://forms.office.com/pages/responsepage.aspx?id=AW39MGaVEEOyJReEvxFnXMjxamHwNP9Cqeem8s6Dwe1UNTVYMkpBSlBNOUs0N1dUTDBUTDY0UDNQMC4u'
-        >
-          <img
-            className='forms_icon_itself'
-            src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Microsoft_Forms_(2019-present).svg/1200px-Microsoft_Forms_(2019-present).svg.png'
-            alt='Microsoft Forms icon'
-          />
-        </a>
+      <div className='forms'>
+        <h1>
+          Prosíme o vyplnění našeho <br /> krátkého formuláře <br /> ohledně COVIDU-19
+        </h1>
+        <p>(Formulář je zcela anonymní)</p>
+        <div className='forms_icon'>
+          <a
+            target='_blank'
+            rel='noreferrer'
+            href='https://forms.office.com/pages/responsepage.aspx?id=AW39MGaVEEOyJReEvxFnXMjxamHwNP9Cqeem8s6Dwe1UNTVYMkpBSlBNOUs0N1dUTDBUTDY0UDNQMC4u'
+          >
+            <img
+              className='forms_icon_itself'
+              src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Microsoft_Forms_(2019-present).svg/1200px-Microsoft_Forms_(2019-present).svg.png'
+              alt='Microsoft Forms icon'
+            />
+          </a>
+        </div>
       </div>
     </div>
   );
