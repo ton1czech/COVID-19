@@ -1,0 +1,5 @@
+.chatbotContainer {
+  display: flex;
+  position: fixed;
+  padding-right: 15px;
+}

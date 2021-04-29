@@ -1,4 +1,4 @@
-@import "~leaflet/dist/leaflet.css";
+@import '~leaflet/dist/leaflet.css';
 
 .map {
   height: 90vh;
@@ -10,4 +10,5 @@
 
 .map .leaflet-container {
   height: 100%;
+  z-index: 10;
 }

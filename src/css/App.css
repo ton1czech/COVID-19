@@ -45,13 +45,18 @@ body {
 .chatbot_icon {
   width: 3.5vw;
   margin-left: 220px;
-  margin-top: 310px;
+  margin-top: 340px;
   right: 3;
   bottom: 3;
   cursor: pointer;
 }
 
-.chatbot {
+.active {
+  display: flex;
+  z-index: 9999;
+}
+
+.inactive {
   display: none;
 }
 
