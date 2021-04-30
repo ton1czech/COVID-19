@@ -11,7 +11,7 @@
 }
 
 body {
-  background-color: whitesmoke;
+  background: #8262a7;
 }
 
 .app {
@@ -24,8 +24,9 @@ body {
   display: flex;
   flex: 0.145;
   padding-right: 70px;
-  background-color: grey;
+  background: #bda2db;
   margin-right: 2.5%;
+  color: black;
 }
 
 .app_main {
@@ -35,17 +36,16 @@ body {
 
 .app_chatbot {
   position: fixed;
-  margin-left: 2.5%;
+  margin-left: 3%;
   right: 0;
   bottom: 0;
   z-index: 999;
-  margin: 10px;
+  margin: 19px;
 }
 
 .chatbot_icon {
   width: 3.5vw;
-  margin-left: 220px;
-  margin-top: 340px;
+  margin: 340px 0 -10px 240px;
   right: 3;
   bottom: 3;
   cursor: pointer;
@@ -73,7 +73,7 @@ body {
   position: relative;
   cursor: pointer;
   width: 5vw;
-  margin: 0 0 0 33vw;
+  margin: 0 0 0 26vw;
 }
 
 @keyframes icon_arrow_animation {

@@ -3,11 +3,11 @@
 }
 
 h1 {
-  font-size: 1.2vw;
+  font-size: 1.1vw;
 }
 
 p {
-  font-size: 1vw;
+  font-size: 0.9vw;
 }
 
 .safe5 {
@@ -23,22 +23,43 @@ p {
 }
 
 .RNumber {
-  margin: 0 0 90px 8px;
+  margin: 0 0 105px 8px;
 }
 
 .forms {
   margin: 0 0 0 8px;
 }
 
+.forms h1 {
+  font-size: 0.8vw;
+}
+
 .forms p {
-  font-size: 0.7vw;
+  font-size: 0.65vw;
 }
 
 .forms_icon {
   padding: 1vw 4.5vw;
+  position: relative;
   cursor: pointer;
+  bottom: -2vw;
 }
 
 .forms_icon_itself {
   width: 5vw;
+}
+
+.safe5 h1,
+.dangerous5 h1,
+.died h1,
+.RNumber h1,
+.forms h1 {
+  text-transform: uppercase;
+}
+
+.safe5 h1,
+.dangerous5 h1,
+.died h1,
+.RNumber h1 {
+  text-decoration: underline;
 }

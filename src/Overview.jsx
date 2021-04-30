@@ -30,7 +30,7 @@ const Overview = () => {
       </div>
       <div className='forms'>
         <h1>
-          Prosíme o vyplnění našeho <br /> krátkého formuláře <br /> ohledně COVIDU-19
+          Prosíme o vyplnění našeho krátkého <br /> formuláře ohledně COVIDU-19
         </h1>
         <p>(Formulář je zcela anonymní)</p>
         <div className='forms_icon'>
