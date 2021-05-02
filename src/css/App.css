@@ -32,6 +32,7 @@ body {
 .app_main {
   flex: 0.75;
   height: max-content;
+  padding-top: 1vw;
 }
 
 .app_chatbot {
@@ -73,7 +74,7 @@ body {
   position: relative;
   cursor: pointer;
   width: 5vw;
-  margin: 0 0 0 26vw;
+  margin: 0 0 0 26.5vw;
 }
 
 @keyframes icon_arrow_animation {

@@ -41,12 +41,12 @@ p {
 .forms_icon {
   padding: 1vw 4.5vw;
   position: relative;
-  cursor: pointer;
   bottom: -2vw;
 }
 
 .forms_icon_itself {
   width: 5vw;
+  cursor: pointer;
 }
 
 .safe5 h1,
