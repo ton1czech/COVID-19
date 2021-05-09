@@ -1,6 +1,7 @@
+import './css/ChatbotContainer.css';
+import './css/App_MOBILE.css';
 import React from 'react';
 import Chatbot from 'react-chatbot-kit';
-import './css/ChatbotContainer.css';
 
 const ChatbotContainer = () => {
   return (

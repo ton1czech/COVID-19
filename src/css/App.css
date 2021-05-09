@@ -20,6 +20,10 @@ body {
   justify-content: space-between;
 }
 
+.app_topbar {
+  display: none;
+}
+
 .app_leftbar {
   display: flex;
   flex: 0.145;
@@ -75,6 +79,10 @@ body {
   cursor: pointer;
   width: 5vw;
   margin: 0 0 0 26.5vw;
+}
+
+.forms_mobile {
+  display: none;
 }
 
 @keyframes icon_arrow_animation {
