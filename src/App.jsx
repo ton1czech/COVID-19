@@ -4,7 +4,7 @@ import React, { useState } from 'react';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import PersonIcon from '@material-ui/icons/Person';
 
-import ChatbotContainer from './ChatbotContainer';
+import ChatbotContainer from './chatbot/ChatbotContainer';
 import Overview from './Overview';
 import Map from './Map';
 import Graphs from './Graphs';
