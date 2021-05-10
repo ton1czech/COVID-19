@@ -22,8 +22,10 @@ function App() {
     <div className='app'>
       <div className='app_topbar'>
         <MapIcon class='hide icon_map' />
-        <h1>nadpis</h1>
-        <p>432423</p>
+        <div className='topbar_text'>
+          <h1>nadpis</h1>
+          <p>432423</p>
+        </div>
         <ShowChartIcon class='hide icon_chart' />
       </div>
 
