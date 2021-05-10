@@ -6,7 +6,6 @@ class MessageParser {
 
   parse(message) {
     const lowercase = message.toLowerCase();
-
     if (
       lowercase.includes('jaká je inkubační doba') ||
       lowercase.includes('jaka je inkubacni doba') ||
@@ -16,6 +15,10 @@ class MessageParser {
       lowercase.includes('inkubacni')
     ) {
       this.actionProvider.incubation_time();
+    } else if (lowercase.includes('ahoj')) {
+      this.actionProvider.ahoj();
+    } else {
+      this.actionProvider.fallback();
     }
   }
 }
