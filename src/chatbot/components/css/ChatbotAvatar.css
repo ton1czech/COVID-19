@@ -1,0 +1,12 @@
+.chatbot_avatar {
+  width: 41px;
+  height: 41px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 0.9rem;
+  background-color: #bda2db;
+  color: #2b064d;
+  margin-right: 7px;
+}
