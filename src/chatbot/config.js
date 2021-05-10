@@ -18,10 +18,9 @@ const config = {
           padding: '5px',
           fontSize: '22px',
           borderRadius: '5px',
-          fontWeight: '600',
         }}
       >
-        COVID19 CHATBOT
+        <h1 style={{ position: 'relative', margin: 'auto' }}>COVID19 CHATBOT</h1>
       </div>
     ),
   },

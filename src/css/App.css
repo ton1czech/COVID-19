@@ -14,6 +14,10 @@ body {
   background: #8262a7;
 }
 
+.hide {
+  display: none;
+}
+
 .app {
   display: flex;
   flex-direction: row;

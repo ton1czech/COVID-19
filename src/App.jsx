@@ -3,8 +3,10 @@ import './css/App_MOBILE.css';
 import React, { useState } from 'react';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import PersonIcon from '@material-ui/icons/Person';
+import MapIcon from '@material-ui/icons/Map';
+import ShowChartIcon from '@material-ui/icons/ShowChart';
 
-import ChatbotContainer from './chatbot/ChatbotContainer';
+import ChatbotContainer from './ChatbotContainer';
 import Overview from './Overview';
 import Map from './Map';
 import Graphs from './Graphs';
@@ -19,8 +21,10 @@ function App() {
   return (
     <div className='app'>
       <div className='app_topbar'>
+        <MapIcon class='hide icon_map' />
         <h1>nadpis</h1>
         <p>432423</p>
+        <ShowChartIcon class='hide icon_chart' />
       </div>
 
       <div className='app_leftbar'>

@@ -17,3 +17,8 @@ code {
 .react-chatbot-kit-chat-container {
   width: 300px !important;
 }
+
+.react-chatbot-kit-chat-message-container {
+  height: 350px !important;
+  width: 300px !important;
+}
