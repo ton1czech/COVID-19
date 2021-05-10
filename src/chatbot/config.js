@@ -4,7 +4,7 @@ import { createChatBotMessage } from 'react-chatbot-kit';
 import ChatbotAvatar from './components/ChatbotAvatar';
 
 const config = {
-  initialMessages: [createChatBotMessage(`Hello world`)],
+  initialMessages: [createChatBotMessage(`Zdravím jak Vám mohu pomoci?`)],
   botName: 'COVID19 Chatbot',
   customComponents: {
     botAvatar: (props) => <ChatbotAvatar {...props} />,

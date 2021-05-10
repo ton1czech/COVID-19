@@ -5,7 +5,18 @@ class MessageParser {
   }
 
   parse(message) {
-    console.log(message);
+    const lowercase = message.toLowerCase();
+
+    if (
+      lowercase.includes('jaká je inkubační doba') ||
+      lowercase.includes('jaka je inkubacni doba') ||
+      lowercase.includes('inkubační doba') ||
+      lowercase.includes('inkubacni doba') ||
+      lowercase.includes('inkubační') ||
+      lowercase.includes('inkubacni')
+    ) {
+      this.actionProvider.incubation_time();
+    }
   }
 }
 
