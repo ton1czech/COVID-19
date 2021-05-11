@@ -14,8 +14,9 @@ import Graphs from './Graphs';
 function App() {
   const [isInactive, setInactive] = useState('false');
 
-  const handleToggle = () => {
+  const handleChatbotToggle = () => {
     setInactive(!isInactive);
+    document.getElementsByClassName('react-chatbot-kit-chat-input')[0].placeholder = 'Zde zadejte svůj dotaz.';
   };
 
   return (
@@ -47,7 +48,7 @@ function App() {
         <div className={isInactive ? 'inactive' : 'active'}>
           <ChatbotContainer />
         </div>
-        <PersonIcon class='chatbot_icon' onClick={handleToggle} />
+        <PersonIcon class='chatbot_icon' onClick={handleChatbotToggle} />
       </div>
 
       <div className='forms_mobile'>
