@@ -8,6 +8,8 @@ import actionProvider from './chatbot/actionProvider';
 import config from './chatbot/config';
 
 const ChatbotContainer = () => {
+  document.getElementsByTagName('input')[0].placeholder = 'Zde zadejte svůj dotaz.';
+
   return (
     <div className='chatbotContainer'>
       <Chatbot config={config} messageParser={messageParser} actionProvider={actionProvider} />
