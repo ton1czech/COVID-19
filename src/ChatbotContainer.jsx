@@ -1,4 +1,4 @@
-import './chatbot/scss/ChatbotContainer.scss';
+import './scss/ChatbotContainer.scss';
 import './scss/App_MOBILE.scss';
 import React from 'react';
 import Chatbot from 'react-chatbot-kit';
