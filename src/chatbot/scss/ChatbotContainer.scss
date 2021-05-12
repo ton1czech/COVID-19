@@ -1,0 +1,18 @@
+.chatbotContainer {
+  display: flex;
+  position: fixed;
+  bottom: 75px;
+}
+
+.react-chatbot-kit-chat-inner-container {
+  height: 400px !important;
+}
+
+.react-chatbot-kit-chat-container {
+  width: 300px !important;
+}
+
+.react-chatbot-kit-chat-message-container {
+  height: 350px !important;
+  width: 300px !important;
+}

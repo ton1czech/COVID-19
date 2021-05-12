@@ -1,5 +1,5 @@
-import './chatbot/css/ChatbotContainer.css';
-import './css/App_MOBILE.css';
+import './chatbot/scss/ChatbotContainer.scss';
+import './scss/App_MOBILE.scss';
 import React from 'react';
 import Chatbot from 'react-chatbot-kit';
 

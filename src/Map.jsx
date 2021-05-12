@@ -1,5 +1,5 @@
-import './css/Map.css';
-import './css/App_MOBILE.css';
+import './scss/Map.scss';
+import './scss/App_MOBILE.scss';
 import React from 'react';
 import { MapContainer, TileLayer } from 'react-leaflet';
 

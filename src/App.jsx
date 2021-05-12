@@ -1,5 +1,5 @@
-import './css/App.css';
-import './css/App_MOBILE.css';
+import './scss/App.scss';
+import './scss/App_MOBILE.scss';
 import React, { useState } from 'react';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import PersonIcon from '@material-ui/icons/Person';
@@ -74,7 +74,7 @@ function App() {
         <div className='forms_mobile_icon'>
           <a
             target='_blank'
-            rel='noreferrer'
+            rel='noopener noreferrer'
             href='https://forms.office.com/pages/responsepage.aspx?id=AW39MGaVEEOyJReEvxFnXMjxamHwNP9Cqeem8s6Dwe1UNTVYMkpBSlBNOUs0N1dUTDBUTDY0UDNQMC4u'
           >
             <img

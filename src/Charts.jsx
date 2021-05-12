@@ -1,5 +1,5 @@
-import './css/Charts.css';
-import './css/App_MOBILE.css';
+import './scss/Charts.scss';
+import './scss/App_MOBILE.scss';
 import React from 'react';
 
 const Charts = () => {

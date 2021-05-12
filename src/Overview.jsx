@@ -1,5 +1,5 @@
-import './css/Overview.css';
-import './css/App_MOBILE.css';
+import './scss/Overview.scss';
+import './scss/App_MOBILE.scss';
 import React from 'react';
 
 const Overview = () => {
@@ -37,7 +37,7 @@ const Overview = () => {
         <div className='forms_icon'>
           <a
             target='_blank'
-            rel='noreferrer'
+            rel='noopener noreferrer'
             href='https://forms.office.com/pages/responsepage.aspx?id=AW39MGaVEEOyJReEvxFnXMjxamHwNP9Cqeem8s6Dwe1UNTVYMkpBSlBNOUs0N1dUTDBUTDY0UDNQMC4u'
           >
             <img
