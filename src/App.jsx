@@ -54,7 +54,7 @@ function App() {
           <Map />
         </div>
 
-        <div className='icon_arrow_container'>
+        <div className='icon_arrow_container mobile_inactive'>
           <ArrowDownwardIcon class='icon_arrow' />
         </div>
 
