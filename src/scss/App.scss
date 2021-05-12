@@ -18,7 +18,7 @@ body {
 
 .active {
   display: flex;
-  z-index: 9999;
+  z-index: 999;
 }
 
 .inactive {
@@ -27,14 +27,6 @@ body {
 
 .desktop_inactive {
   display: none;
-}
-
-.max_z_index {
-  z-index: 999;
-}
-
-.min_z_index {
-  z-index: -10;
 }
 
 /* ========== STYLING ========== */
@@ -65,10 +57,10 @@ body {
 // chatbot
 .app_chatbot {
   position: fixed;
-  margin-left: 3%;
   right: 0;
   bottom: 0;
   margin: 19px;
+  z-index: 9;
 
   .chatbot_container {
     position: fixed;
@@ -85,8 +77,9 @@ body {
 
 // arrow
 .icon_arrow_container {
+  width: fit-content;
   position: relative;
-  z-index: 999;
+  z-index: 1;
 
   .icon_arrow {
     display: flex;
@@ -96,7 +89,7 @@ body {
     animation-duration: 2s;
     animation-iteration-count: infinite;
     width: 5vw;
-    margin: 0 0 0 26.5vw;
+    left: 26.2vw;
   }
 }
 
