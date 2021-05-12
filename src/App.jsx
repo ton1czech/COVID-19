@@ -36,13 +36,13 @@ function App() {
 
   return (
     <div className='app'>
-      <div className='app_topbar'>
-        <MapIcon class='hide icon_map' onClick={handleMap} />
+      <div className='app_topbar desktop_inactive'>
+        <MapIcon class='icon_map' onClick={handleMap} />
         <div className='topbar_text'>
           <h1>nadpis</h1>
           <p>432423</p>
         </div>
-        <ShowChartIcon class='hide icon_chart' onClick={handleCharts} />
+        <ShowChartIcon class='icon_chart' onClick={handleCharts} />
       </div>
 
       <div className='app_leftbar'>
@@ -54,8 +54,8 @@ function App() {
           <Map />
         </div>
 
-        <div className='icon_arrow'>
-          <ArrowDownwardIcon class='icon_arrow_itself' />
+        <div className='icon_arrow_container'>
+          <ArrowDownwardIcon class='icon_arrow' />
         </div>
 
         <div className={isChartsActive ? 'app_main_charts moible_active' : 'app_main_charts mobile_inactive'}>
@@ -70,15 +70,15 @@ function App() {
         <PersonIcon class='chatbot_icon' onClick={handleChatbotToggle} />
       </div>
 
-      <div className='forms_mobile'>
-        <div className='forms_mobile_icon'>
+      <div className='desktop_inactive'>
+        <div className='forms_mobile_icon_container'>
           <a
             target='_blank'
             rel='noopener noreferrer'
             href='https://forms.office.com/pages/responsepage.aspx?id=AW39MGaVEEOyJReEvxFnXMjxamHwNP9Cqeem8s6Dwe1UNTVYMkpBSlBNOUs0N1dUTDBUTDY0UDNQMC4u'
           >
             <img
-              className='forms_mobile_icon_itself'
+              className='forms_mobile_icon'
               src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Microsoft_Forms_(2019-present).svg/1200px-Microsoft_Forms_(2019-present).svg.png'
               alt='Microsoft Forms icon'
             />

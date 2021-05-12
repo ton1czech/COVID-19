@@ -14,50 +14,7 @@ body {
   background: #8262a7;
 }
 
-.hide {
-  display: none;
-}
-
-.app {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-}
-
-.app_topbar {
-  display: none;
-}
-
-.app_leftbar {
-  display: flex;
-  width: 45vw;
-  background: #bda2db;
-  margin-right: 2.5%;
-  color: black;
-}
-
-.app_main {
-  flex: 0.75;
-  height: max-content;
-  padding-top: 1vw;
-}
-
-.app_chatbot {
-  position: fixed;
-  margin-left: 3%;
-  right: 0;
-  bottom: 0;
-  z-index: 999;
-  margin: 19px;
-}
-
-.chatbot_icon {
-  width: 3.5vw;
-  margin: 340px 0 -10px 280px;
-  right: 3;
-  bottom: 3;
-  cursor: pointer;
-}
+/* ========== FUNCTIONAL CLASSES ========== */
 
 .active {
   display: flex;
@@ -68,25 +25,71 @@ body {
   display: none;
 }
 
-.icon_arrow {
-  position: relative;
-  animation-name: icon_arrow_animation;
-  animation-duration: 2s;
-  animation-iteration-count: infinite;
-  z-index: 999;
-}
-
-.icon_arrow_itself {
-  display: flex;
-  position: relative;
-  cursor: pointer;
-  width: 5vw;
-  margin: 0 0 0 26.5vw;
-}
-
-.forms_mobile {
+.desktop_inactive {
   display: none;
 }
+
+/* ========== STYLING ========== */
+
+// app
+.app {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+// leftbar
+.app_leftbar {
+  display: flex;
+  width: 45vw;
+  background: #bda2db;
+  margin-right: 2.5%;
+  color: black;
+}
+
+// main
+.app_main {
+  flex: 0.75;
+  height: max-content;
+  padding-top: 1vw;
+}
+
+// chatbot
+.app_chatbot {
+  position: fixed;
+  margin-left: 3%;
+  right: 0;
+  bottom: 0;
+  z-index: 999;
+  margin: 19px;
+
+  .chatbot_icon {
+    width: 3.5vw;
+    margin: 340px 0 -10px 280px;
+    right: 3;
+    bottom: 3;
+    cursor: pointer;
+  }
+}
+
+// arrow
+.icon_arrow_container {
+  position: relative;
+  z-index: 999;
+
+  .icon_arrow {
+    display: flex;
+    position: relative;
+    cursor: pointer;
+    animation-name: icon_arrow_animation;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    width: 5vw;
+    margin: 0 0 0 26.5vw;
+  }
+}
+
+/* ========== KEYFRAMES ========== */
 
 @keyframes icon_arrow_animation {
   from {
