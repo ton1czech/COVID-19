@@ -64,7 +64,7 @@ function App() {
       </div>
 
       <div className='app_chatbot'>
-        <div className={isChatbotInactive ? 'inactive' : 'active'}>
+        <div className={isChatbotInactive ? 'chatbot_container inactive' : 'chatbot_container active'}>
           <ChatbotContainer />
         </div>
         <PersonIcon class='chatbot_icon' onClick={handleChatbotToggle} />

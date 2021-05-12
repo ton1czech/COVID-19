@@ -1,5 +1,7 @@
 @import '~leaflet/dist/leaflet.css';
 
+/* ========== NORMAL SIZEZ SCREEN ========== */
+
 @media screen and (max-width: 500px) {
   /* ========== FUNCTIONAL CLASSES ========== */
 
@@ -20,6 +22,7 @@
 
   // topbar
   .app_topbar {
+    position: fixed;
     display: flex;
     background: #bda2db;
     top: 0px;
@@ -81,19 +84,30 @@
   // map
   .map {
     position: absolute;
-    width: 50vh !important;
-    height: 66vh !important;
+    width: 96vw !important;
+    height: 76vh !important;
     top: 50%;
     left: 50%;
-    margin: -33vh 0 0 -25vh !important;
+    margin: -38vh 0 0 -48vw !important;
   }
 
   // charts
   .charts {
     position: absolute;
     top: 0;
-    left: 0;
-    margin: 0 !important;
+    left: 50%;
+    transform: translate(-50%, 0);
+    margin: 90px 0 !important;
+
+    .charts_container {
+      height: 75vh !important;
+      overflow: scroll;
+    }
+
+    .chart {
+      margin-bottom: 20px !important;
+      width: 92vw !important;
+    }
   }
 
   // chatbot
@@ -111,6 +125,25 @@
 
     .forms_mobile_icon {
       width: 11vw;
+    }
+  }
+}
+
+/* ========== SMALL SIZEZ SCREEN ========== */
+
+@media screen and (max-height: 580px) {
+  /* ========== STYLING ========== */
+
+  // map
+  .map {
+    height: 66vh !important;
+    margin: -33vh 0 0 -48vw !important;
+  }
+
+  // charts
+  .charts {
+    .charts_container {
+      height: 68vh !important;
     }
   }
 }
