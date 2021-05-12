@@ -5,34 +5,40 @@ import React from 'react';
 const Overview = () => {
   return (
     <div className='overview'>
-      <div className='safe5'>
-        <h1>5 nejbezpečnějších zemí</h1>
-        <p>Zapadákov</p>
-        <p>SSSR</p>
-        <p>Prusko</p>
-        <p>Jugoslávie</p>
-        <p>Rakousko-Uhersko</p>
+      <div className='ww'>
+        <h1 className='header'>CELOSVĚTOVĚ</h1>
+        <div className='ww_container ww_cases'>
+          <h2>Dnešní nové případy</h2>
+          <p>432 523</p>
+        </div>
+        <div className='ww_container ww_recovered'>
+          <h2>Dnešní počet vyléčení</h2>
+          <p>1 432 643</p>
+        </div>
+        <div className='ww_container ww_deaths'>
+          <h2>Dnešní počet úmrtí</h2>
+          <p>28 742</p>
+        </div>
       </div>
-      <div className='dangerous5'>
-        <h1>5 nejnebezpečnějších zemí</h1>
-        <p>Amerikaaa</p>
-        <p>Akirema</p>
-        <p>Kanada</p>
-        <p>USA</p>
-        <p>Mexiko</p>
-      </div>
-      <div className='died'>
-        <h1>počet úmrtí</h1>
-        <p>4,328,742</p>
-      </div>
-      <div className='RNumber'>
-        <h1>Reprodukční číslo</h1>
-        <p>2.354</p>
+      <div className='cz'>
+        <h1 className='header'>V ČR</h1>
+        <div className='cz-container cz_cases'>
+          <h2>Dnešní nové případy</h2>
+          <p>432 523</p>
+        </div>
+        <div className='cz_container cz_recovered'>
+          <h2>Dnešní počet vyléčení</h2>
+          <p>1 432 643</p>
+        </div>
+        <div className='cz_container cz_deaths'>
+          <h2>Dnešní počet úmrtí</h2>
+          <p>28 742</p>
+        </div>
       </div>
       <div className='forms'>
-        <h1>
+        <h2>
           Prosíme o vyplnění našeho krátkého <br /> formuláře ohledně COVIDU-19
-        </h1>
+        </h2>
         <p>(Formulář je zcela anonymní)</p>
         <div className='forms_icon_container'>
           <a

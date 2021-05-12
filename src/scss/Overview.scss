@@ -2,36 +2,50 @@
   position: fixed;
 
   h1 {
-    font-size: 1.1vw;
+    font-size: 2vw;
+  }
+
+  h2 {
+    font-size: 1.05vw;
     text-transform: uppercase;
     text-decoration: underline;
   }
 
   p {
-    font-size: 0.9vw;
+    font-size: 0.85vw;
   }
 }
 
-.safe5 {
-  margin: 20px 0 70px 8px;
+.ww {
+  margin: 20px 0 70px 10px;
+
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .ww_container {
+    margin-bottom: 10px;
+  }
 }
 
-.dangerous5 {
-  margin: 0 0 70px 8px;
-}
+.cz {
+  margin: 0 0 125px 10px;
 
-.died {
-  margin: 0 0 70px 8px;
-}
+  .header {
+    text-align: center;
+    margin-bottom: 30px;
+  }
 
-.RNumber {
-  margin: 0 0 105px 8px;
+  .cz_container {
+    margin-bottom: 10px;
+  }
 }
 
 .forms {
-  margin: 0 0 0 8px;
+  margin: 0 0 0 10px;
 
-  h1 {
+  h2 {
     text-transform: none;
     text-decoration: none;
     font-size: 0.8vw;
