@@ -5,16 +5,13 @@ import React from 'react';
 const Charts = () => {
   return (
     <div className='charts'>
-      <h1>TEST GRAFU</h1>
-      <h1>TEST GRAFU</h1>
-      <h1>TEST GRAFU</h1>
-      <h1>TEST GRAFU</h1>
-      <h1>TEST GRAFU</h1>
-      <h1>TEST GRAFU</h1>
-      <h1>TEST GRAFU</h1>
-      <h1>TEST GRAFU</h1>
-      <h1>TEST GRAFU</h1>
-      <h1>TEST GRAFU</h1>
+      <div className='charts_container'>
+        <img className='chart' src='https://i.imgur.com/LqJlRHp.jpeg'></img>
+        <img className='chart' src='https://i.imgur.com/LqJlRHp.jpeg'></img>
+        <img className='chart' src='https://i.imgur.com/LqJlRHp.jpeg'></img>
+        <img className='chart' src='https://i.imgur.com/LqJlRHp.jpeg'></img>
+        <img className='chart' src='https://i.imgur.com/LqJlRHp.jpeg'></img>
+      </div>
     </div>
   );
 };
