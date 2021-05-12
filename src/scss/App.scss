@@ -29,6 +29,14 @@ body {
   display: none;
 }
 
+.max_z_index {
+  z-index: 999;
+}
+
+.min_z_index {
+  z-index: -10;
+}
+
 /* ========== STYLING ========== */
 
 // app
@@ -61,7 +69,10 @@ body {
   right: 0;
   bottom: 0;
   margin: 19px;
-  z-index: 999;
+
+  .chatbot_container {
+    position: fixed;
+  }
 
   .chatbot_icon {
     width: 3.5vw;

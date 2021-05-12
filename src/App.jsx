@@ -15,13 +15,19 @@ function App() {
   const [isChatbotInactive, setChatbotInactive] = useState('false');
   const [isMapActive, setMapActive] = useState(true);
   const [isChartsActive, setChartsActive] = useState(false);
+  const [isMaxZIndex, setMaxZIndex] = useState(false);
 
   const setMapInactive = () => setMapActive(false);
   const setChartsInactive = () => setChartsActive(false);
 
   const handleChatbotToggle = () => {
     setChatbotInactive(!isChatbotInactive);
+    handleMaxZIndex();
     document.getElementsByClassName('react-chatbot-kit-chat-input')[0].placeholder = 'Zde zadejte svůj dotaz.';
+  };
+
+  const handleMaxZIndex = () => {
+    setMaxZIndex(!isMaxZIndex);
   };
 
   const handleMap = () => {
@@ -63,7 +69,7 @@ function App() {
         </div>
       </div>
 
-      <div className='app_chatbot'>
+      <div className={isMaxZIndex ? 'app_chatbot max_z_index' : 'app_chatbot min_z_index'}>
         <div className={isChatbotInactive ? 'chatbot_container inactive' : 'chatbot_container active'}>
           <ChatbotContainer />
         </div>
