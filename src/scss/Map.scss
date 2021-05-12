@@ -5,9 +5,9 @@
   width: 74vw;
   margin: 1vw 5vw 0 0;
   border: 5px solid rgb(43, 6, 77);
-}
 
-.map .leaflet-container {
-  height: 100%;
-  z-index: 10;
+  .leaflet-container {
+    height: 100%;
+    z-index: 10;
+  }
 }
