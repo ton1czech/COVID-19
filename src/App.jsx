@@ -28,6 +28,12 @@ function App() {
     } else if ((document.getElementsByClassName('leaflet-container')[0].style.zIndex = '10')) {
       document.getElementsByClassName('leaflet-container')[0].style.zIndex = '5';
     }
+
+    if (document.getElementsByClassName('charts')[0].style.zIndex === '5') {
+      document.getElementsByClassName('charts')[0].style.zIndex = '10';
+    } else if ((document.getElementsByClassName('charts')[0].style.zIndex = '10')) {
+      document.getElementsByClassName('charts')[0].style.zIndex = '5';
+    }
   };
 
   const handleMap = () => {
