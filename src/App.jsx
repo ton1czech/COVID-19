@@ -46,6 +46,10 @@ function App() {
     setChartsActive(!isChartsActive);
   };
 
+  const scrollDown = () => {
+    window.scrollBy(0, window.innerHeight);
+  };
+
   return (
     <div className='app'>
       <div className='app_topbar desktop_inactive'>
@@ -67,7 +71,7 @@ function App() {
         </div>
 
         <div className='icon_arrow_container mobile_inactive'>
-          <ArrowDownwardIcon class='icon_arrow' />
+          <ArrowDownwardIcon class='icon_arrow' onClick={scrollDown} />
         </div>
 
         <div className={isChartsActive ? 'app_main_charts moible_active' : 'app_main_charts mobile_inactive'}>
