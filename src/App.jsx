@@ -23,10 +23,10 @@ function App() {
     setChatbotInactive(!isChatbotInactive);
     document.getElementsByClassName('react-chatbot-kit-chat-input')[0].placeholder = 'Zde zadejte svůj dotaz.';
 
-    if (document.getElementsByClassName('leaflet-container')[0].style.zIndex === '5') {
-      document.getElementsByClassName('leaflet-container')[0].style.zIndex = '10';
-    } else if ((document.getElementsByClassName('leaflet-container')[0].style.zIndex = '10')) {
-      document.getElementsByClassName('leaflet-container')[0].style.zIndex = '5';
+    if (document.getElementsByClassName('app_main')[0].style.zIndex === '5') {
+      document.getElementsByClassName('app_main')[0].style.zIndex = '10';
+    } else if ((document.getElementsByClassName('app_main')[0].style.zIndex = '10')) {
+      document.getElementsByClassName('app_main')[0].style.zIndex = '5';
     }
   };
 
