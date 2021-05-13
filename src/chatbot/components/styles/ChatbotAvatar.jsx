@@ -1,5 +1,5 @@
 import './scss/ChatbotAvatar.scss';
-import '../../scss/App_MOBILE.scss';
+import '../../../scss/App_MOBILE.scss';
 import React from 'react';
 
 const BotAvatar = () => {

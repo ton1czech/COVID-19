@@ -1,7 +1,7 @@
 import React from 'react';
 import { createChatBotMessage } from 'react-chatbot-kit';
 
-import ChatbotAvatar from './components/ChatbotAvatar';
+import ChatbotAvatar from './components/styles/ChatbotAvatar';
 
 const config = {
   initialMessages: [createChatBotMessage('Zdravím jak Vám mohu pomoci?')],
