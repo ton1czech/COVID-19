@@ -22,7 +22,7 @@ const Overview = () => {
       </div>
       <div className='cz'>
         <h1 className='header'>V ČR</h1>
-        <div className='cz-container cz_cases'>
+        <div className='cz_container cz_cases'>
           <h2>Dnešní nové případy</h2>
           <p>432 523</p>
         </div>
