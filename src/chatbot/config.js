@@ -2,10 +2,21 @@ import React from 'react';
 import { createChatBotMessage } from 'react-chatbot-kit';
 
 import ChatbotAvatar from './components/styles/ChatbotAvatar';
+import Options from './components/options/Options';
 
 const config = {
-  initialMessages: [createChatBotMessage('Zdravím jak Vám mohu pomoci?')],
   botName: 'COVID19 Chatbot',
+  initialMessages: [
+    createChatBotMessage(`Zdravím jak Vám mohu pomoci?`, {
+      widget: 'options',
+    }),
+  ],
+  widgets: [
+    {
+      widgetName: 'options',
+      widgetFunc: (props) => <Options {...props} />,
+    },
+  ],
   customComponents: {
     botAvatar: (props) => <ChatbotAvatar {...props} />,
     header: () => (

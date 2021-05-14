@@ -10,13 +10,25 @@ class ActionProvider {
     this.setChatbotMessage(message);
   };
 
-  incubation_time = () => {
+  incubationTime = () => {
     const message = this.createChatBotMessage('Inkubační doba je 2 - 14 dní.');
     this.setChatbotMessage(message);
   };
 
-  ahoj = () => {
-    const message = this.createChatBotMessage('Zdaaaar');
+  symptoms = () => {
+    const message = this.createChatBotMessage('Hlavními příznaky jsou rýma, kašel, ztráta chutě');
+    this.setChatbotMessage(message);
+  };
+
+  vaccines = () => {
+    const message = this.createChatBotMessage(
+      'Vakcíny schválené v ČR jsou: AstraZeneca, Johnson & Johnson, Moderna a Pfizer.'
+    );
+    this.setChatbotMessage(message);
+  };
+
+  tests = () => {
+    const message = this.createChatBotMessage('Nárok na bezplatné testování máte každé 3 dny.');
     this.setChatbotMessage(message);
   };
 
