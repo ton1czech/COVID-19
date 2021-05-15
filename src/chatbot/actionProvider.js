@@ -16,7 +16,9 @@ class ActionProvider {
   };
 
   symptoms = () => {
-    const message = this.createChatBotMessage('Rýma, kašel, ztráta chutě, bolesti svalů, zvýšená teplota a únava');
+    const message = this.createChatBotMessage(
+      'Rýma, kašel, ztráta chutě, bolesti svalů či hlavy, zvýšená teplota, zvracení nebo únava'
+    );
     this.setChatbotMessage(message);
   };
 
