@@ -41,6 +41,13 @@ class MessageParser {
       lowercase.includes('testovat')
     ) {
       this.actionProvider.tests();
+    } else if (
+      lowercase.includes('průběh') ||
+      lowercase.includes('pruběh') ||
+      lowercase.includes('průbeh') ||
+      lowercase.includes('prubeh')
+    ) {
+      this.actionProvider.progress();
     } else {
       this.actionProvider.fallback();
     }

@@ -32,6 +32,13 @@ class ActionProvider {
     this.setChatbotMessage(message);
   };
 
+  progress = () => {
+    const message = this.createChatBotMessage(
+      '80% procet nakažených zažívá lehký průběh, 14% těžký průběh a 6% kritický průběh.'
+    );
+    this.setChatbotMessage(message);
+  };
+
   setChatbotMessage = (message) => {
     this.setState((state) => ({ ...state, messages: [...state.messages, message] }));
   };
