@@ -50,6 +50,26 @@ function App() {
     window.scrollBy(0, window.innerHeight);
   };
 
+  fetch('https://disease.sh/v3/covid-19/all')
+    .then((res) => res.json())
+    .then((data) => displayWWData(data));
+
+  const displayWWData = (data) => {
+    document.getElementsByClassName('ww_cases')[0].innerHTML = data.todayCases;
+    document.getElementsByClassName('ww_recovered')[0].innerHTML = data.todayRecovered;
+    document.getElementsByClassName('ww_deaths')[0].innerHTML = data.todayDeaths;
+  };
+
+  fetch('https://disease.sh/v3/covid-19/countries/cz?strict=true')
+    .then((res) => res.json())
+    .then((data) => displayCZData(data));
+
+  const displayCZData = (data) => {
+    document.getElementsByClassName('cz_cases')[0].innerHTML = data.todayCases;
+    document.getElementsByClassName('cz_recovered')[0].innerHTML = data.todayRecovered;
+    document.getElementsByClassName('cz_deaths')[0].innerHTML = data.todayDeaths;
+  };
+
   return (
     <div className='app'>
       <div className='app_topbar desktop_inactive'>

@@ -7,32 +7,32 @@ const Overview = () => {
     <div className='overview'>
       <div className='ww'>
         <h1 className='header'>CELOSVĚTOVĚ</h1>
-        <div className='ww_container ww_cases'>
+        <div className='ww_container'>
           <h2>Dnešní nové případy</h2>
-          <p>432 523</p>
+          <p className='ww_cases'></p>
         </div>
-        <div className='ww_container ww_recovered'>
+        <div className='ww_container'>
           <h2>Dnešní počet vyléčení</h2>
-          <p>1 432 643</p>
+          <p className='ww_recovered'></p>
         </div>
-        <div className='ww_container ww_deaths'>
+        <div className='ww_container'>
           <h2>Dnešní počet úmrtí</h2>
-          <p>28 742</p>
+          <p className='ww_deaths'></p>
         </div>
       </div>
       <div className='cz'>
         <h1 className='header'>V ČR</h1>
-        <div className='cz_container cz_cases'>
+        <div className='cz_container'>
           <h2>Dnešní nové případy</h2>
-          <p>432 523</p>
+          <p className='cz_cases'></p>
         </div>
-        <div className='cz_container cz_recovered'>
+        <div className='cz_container'>
           <h2>Dnešní počet vyléčení</h2>
-          <p>1 432 643</p>
+          <p className='cz_recovered'></p>
         </div>
-        <div className='cz_container cz_deaths'>
+        <div className='cz_container'>
           <h2>Dnešní počet úmrtí</h2>
-          <p>28 742</p>
+          <p className='cz_deaths'></p>
         </div>
       </div>
       <div className='forms'>
