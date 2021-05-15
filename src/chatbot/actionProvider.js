@@ -16,7 +16,7 @@ class ActionProvider {
   };
 
   symptoms = () => {
-    const message = this.createChatBotMessage('Hlavními příznaky jsou rýma, kašel, ztráta chutě');
+    const message = this.createChatBotMessage('Rýma, kašel, ztráta chutě, bolesti svalů, zvýšená teplota a únava');
     this.setChatbotMessage(message);
   };
 
