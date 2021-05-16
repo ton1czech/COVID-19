@@ -37,32 +37,32 @@ const Overview = () => {
 
   return (
     <div className='overview'>
-      <div className='ww'>
+      <div className='ww overview_container'>
         <h1 className='header'>CELOSVĚTOVĚ</h1>
-        <div className='ww_container'>
+        <div className='ww_container data_container'>
           <h2>Dnešní nové případy</h2>
           <p id='ww_cases_data'></p>
         </div>
-        <div className='ww_container'>
+        <div className='ww_container data_container'>
           <h2>Dnešní počet vyléčení</h2>
           <p id='ww_recovered_data'></p>
         </div>
-        <div className='ww_container'>
+        <div className='ww_container data_container'>
           <h2>Dnešní počet úmrtí</h2>
           <p id='ww_deaths_data'></p>
         </div>
       </div>
-      <div className='cz'>
+      <div className='cz overview_container'>
         <h1 className='header'>V ČR</h1>
-        <div className='cz_container'>
+        <div className='cz_container data_container'>
           <h2>Dnešní nové případy</h2>
           <p id='cz_cases_data'></p>
         </div>
-        <div className='cz_container'>
+        <div className='cz_container data_container'>
           <h2>Dnešní počet vyléčení</h2>
           <p id='cz_recovered_data'></p>
         </div>
-        <div className='cz_container'>
+        <div className='cz_container data_container'>
           <h2>Dnešní počet úmrtí</h2>
           <p id='cz_deaths_data'></p>
         </div>

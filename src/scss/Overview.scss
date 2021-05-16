@@ -3,12 +3,14 @@
 
   h1 {
     font-size: 2vw;
+    text-decoration: underline;
+    font-weight: 800;
   }
 
   h2 {
     font-size: 1.05vw;
     text-transform: uppercase;
-    text-decoration: underline;
+    font-weight: 700;
   }
 
   p {
@@ -16,34 +18,29 @@
   }
 }
 
-.ww {
-  margin: 20px 0 50px 10px;
+.overview_container {
   text-align: center;
 
   .header {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
 
-  .ww_container {
-    margin-bottom: 10px;
+  .data_container {
+    margin-bottom: 8px;
   }
+}
+
+.ww {
+  margin: 20px 0 50px 10px;
 }
 
 .cz {
   margin: 0 0 90px 10px;
-  text-align: center;
-
-  .header {
-    margin-bottom: 30px;
-  }
-
-  .cz_container {
-    margin-bottom: 10px;
-  }
 }
 
 .forms {
   margin: 0 0 0 10px;
+  text-align: center;
 
   h2 {
     text-transform: none;
@@ -54,11 +51,11 @@
   p {
     font-size: 0.65vw;
   }
-}
 
-.forms_icon {
-  margin: 2.2vw 5vw;
-  position: relative;
-  width: 5vw;
-  cursor: pointer;
+  .forms_icon {
+    margin: 2.2vw 5vw;
+    position: relative;
+    width: 5vw;
+    cursor: pointer;
+  }
 }
