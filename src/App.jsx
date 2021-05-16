@@ -84,24 +84,26 @@ function App() {
         <Overview />
       </div>
       <div className='app_main'>
-        <div className={isMapActive ? 'app_main_map mobile_active' : 'app_main_map mobile_inactive'}>
+        <div className={isMapActive ? 'app_main_map _mobile-active' : 'app_main_map _mobile-inactive'}>
           <Map />
         </div>
 
-        <div className={isChartsActive ? 'app_main_charts moible_active' : 'app_main_charts mobile_inactive'}>
+        <div className={isChartsActive ? 'app_main_charts _mobile-active' : 'app_main_charts _mobile-inactive'}>
           <Charts />
         </div>
       </div>
-      <ArrowDownwardIcon class='icon_arrow' onClick={scrollDown} />
+      <ArrowDownwardIcon class='icon_arrow _mobile-inactive' onClick={scrollDown} />
       <div className='app_chatbot'>
-        <div className={isChatbotInactive ? 'chatbot_container inactive' : 'chatbot_container active'}>
+        <div
+          className={isChatbotInactive ? 'chatbot_container _chatbot-inactive' : 'chatbot_container _chatbot-active'}
+        >
           <ChatbotContainer />
         </div>
         <MessageIcon class='chatbot_icon' onClick={handleChatbotToggle} />
       </div>
 
       {/* MOBILE */}
-      <div className='app_topbar desktop_inactive'>
+      <div className='app_topbar _desktop-inactive'>
         <MapIcon class='icon_map' onClick={handleMap} />
         <div className='topbar_text'>
           <h1 id='data_header'>nadpis</h1>
@@ -110,7 +112,7 @@ function App() {
         <ShowChartIcon class='icon_chart' onClick={handleCharts} />
       </div>
 
-      <div className='desktop_inactive'>
+      <div className='_desktop-inactive'>
         <div className='forms_mobile_icon_container'>
           <a
             target='_blank'

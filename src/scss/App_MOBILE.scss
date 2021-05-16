@@ -6,16 +6,16 @@
 @media screen and (max-width: 500px) {
   /* ========== FUNCTIONAL CLASSES ========== */
 
-  .mobile_active {
+  ._mobile-active {
     display: flex;
     z-index: 999;
   }
 
-  .mobile_inactive {
+  ._mobile-inactive {
     display: none !important;
   }
 
-  .desktop_inactive {
+  ._desktop-inactive {
     display: inline;
   }
 

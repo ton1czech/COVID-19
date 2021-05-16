@@ -18,16 +18,16 @@ body {
 
 /* ========== FUNCTIONAL CLASSES ========== */
 
-.active {
+._chatbot-active {
   display: flex;
   z-index: 999;
 }
 
-.inactive {
+._chatbot-inactive {
   display: none;
 }
 
-.desktop_inactive {
+._desktop-inactive {
   display: none;
 }
 
