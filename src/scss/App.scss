@@ -66,6 +66,9 @@ body {
   .chatbot_icon {
     width: 3.5vw;
     cursor: pointer;
+    background-color: $primary-color-light;
+    border-radius: 50%;
+    padding: 5px;
   }
 }
 

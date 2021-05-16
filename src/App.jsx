@@ -2,9 +2,9 @@ import './scss/App.scss';
 import './scss/App_MOBILE.scss';
 import React, { useState } from 'react';
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
-import PersonIcon from '@material-ui/icons/Person';
 import MapIcon from '@material-ui/icons/Map';
 import ShowChartIcon from '@material-ui/icons/ShowChart';
+import MessageIcon from '@material-ui/icons/Message';
 
 import ChatbotContainer from './ChatbotContainer';
 import Overview from './Overview';
@@ -97,7 +97,7 @@ function App() {
         <div className={isChatbotInactive ? 'chatbot_container inactive' : 'chatbot_container active'}>
           <ChatbotContainer />
         </div>
-        <PersonIcon class='chatbot_icon' onClick={handleChatbotToggle} />
+        <MessageIcon class='chatbot_icon' onClick={handleChatbotToggle} />
       </div>
 
       {/* MOBILE */}
