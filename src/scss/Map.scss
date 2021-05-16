@@ -1,10 +1,11 @@
+@import './vars.scss';
 @import '~leaflet/dist/leaflet.css';
 
 .map {
   height: 90vh;
-  width: 74vw;
-  margin: 1vw 5vw 0 0;
-  border: 5px solid rgb(43, 6, 77);
+  width: 76vw;
+  margin: 1vw 0 0 0;
+  border: 5px solid $primary-color-dark;
 
   .leaflet-container {
     height: 100%;

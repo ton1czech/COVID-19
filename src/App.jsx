@@ -88,14 +88,11 @@ function App() {
           <Map />
         </div>
 
-        <div className='icon_arrow_container mobile_inactive'>
-          <ArrowDownwardIcon class='icon_arrow' onClick={scrollDown} />
-        </div>
-
         <div className={isChartsActive ? 'app_main_charts moible_active' : 'app_main_charts mobile_inactive'}>
           <Charts />
         </div>
       </div>
+      <ArrowDownwardIcon class='icon_arrow' onClick={scrollDown} />
       <div className='app_chatbot'>
         <div className={isChatbotInactive ? 'chatbot_container inactive' : 'chatbot_container active'}>
           <ChatbotContainer />

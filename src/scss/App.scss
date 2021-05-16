@@ -43,17 +43,16 @@ body {
 // leftbar
 .app_leftbar {
   display: flex;
-  width: 45vw;
+  width: 75vw;
   background: $primary-color-light;
-  margin-right: 2.5%;
+  margin: 0 2.5% 0 0;
   color: black;
 }
 
 // main
 .app_main {
-  flex: 0.75;
   height: max-content;
-  padding-top: 1vw;
+  padding: 1vw 0 0 0;
 }
 
 // chatbot
@@ -71,29 +70,25 @@ body {
 }
 
 // arrow
-.icon_arrow_container {
-  width: fit-content;
+.icon_arrow {
+  animation: icon_arrow_animation 2s infinite;
   position: relative;
-
-  .icon_arrow {
-    display: flex;
-    position: relative;
-    cursor: pointer;
-    animation-name: icon_arrow_animation;
-    animation-duration: 2s;
-    animation-iteration-count: infinite;
-    width: 5vw;
-    left: 26.2vw;
-  }
+  display: flex;
+  cursor: pointer;
+  z-index: 999;
+  width: 24vw;
+  height: min-content;
+  right: 50vw;
+  transform: translate(50%, 0);
 }
 
 /* ========== KEYFRAMES ========== */
 
 @keyframes icon_arrow_animation {
   from {
-    bottom: 5px;
+    top: 93vh;
   }
   to {
-    bottom: -20px;
+    top: 95vh;
   }
 }
