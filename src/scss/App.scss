@@ -1,3 +1,5 @@
+@import './vars.scss';
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +13,7 @@
 }
 
 body {
-  background: #8262a7;
+  background: $primary-color-medium;
 }
 
 /* ========== FUNCTIONAL CLASSES ========== */
@@ -42,7 +44,7 @@ body {
 .app_leftbar {
   display: flex;
   width: 45vw;
-  background: #bda2db;
+  background: $primary-color-light;
   margin-right: 2.5%;
   color: black;
 }

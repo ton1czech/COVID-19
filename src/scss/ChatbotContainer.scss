@@ -1,3 +1,5 @@
+@import './vars.scss';
+
 .chatbotContainer {
   display: flex;
   position: fixed;
@@ -10,7 +12,7 @@
 
 .react-chatbot-kit-chat-container {
   width: 300px !important;
-  border: 3.5px solid rgb(43, 6, 77);
+  border: 3.5px solid $primary-color-dark;
   border-radius: 2.9%;
 }
 
