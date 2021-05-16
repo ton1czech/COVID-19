@@ -50,15 +50,6 @@ function App() {
     window.scrollTo(0, window.innerHeight * 1.2);
   };
 
-  // var titleList = [
-  //   (document.getElementById('_data-title').innerHTML = 'Dnešní případy (Celosvětově)'),
-  //   (document.getElementById('_data-title').innerHTML = 'Dnešní vyléčení (Celosvětově)'),
-  //   (document.getElementById('_data-title').innerHTML = 'Dnešní úmrtí (Celosvětově)'),
-  //   (document.getElementById('_data-title').innerHTML = 'Dnešní případy (CZ)'),
-  //   (document.getElementById('_data-title').innerHTML = 'Dnešní vyléčení (CZ)'),
-  //   (document.getElementById('_data-title').innerHTML = 'Dnešní úmrtí (CZ)'),
-  // ];
-
   var titleArray = [
     'Dnešní případy (Celosvětově)',
     'Dnešní vyléčení (Celosvětově)',
@@ -68,12 +59,11 @@ function App() {
     'Dnešní úmrtí (CZ)',
   ];
 
-  for (var i = 0; i < titleArray.length; i++) {
+  for (let i = 0; i < titleArray.length; i++) {
     (function (i) {
       setTimeout(function () {
         document.getElementById('_data-title').innerHTML = titleArray[i];
-        console.log(titleArray[i]);
-      }, 10000 * i);
+      }, 3000 * i);
     })(i);
   }
 
