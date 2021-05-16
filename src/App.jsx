@@ -52,19 +52,9 @@ function App() {
 
   return (
     <div className='app'>
-      <div className='app_topbar desktop_inactive'>
-        <MapIcon class='icon_map' onClick={handleMap} />
-        <div className='topbar_text'>
-          <h1>nadpis</h1>
-          <p>432423</p>
-        </div>
-        <ShowChartIcon class='icon_chart' onClick={handleCharts} />
-      </div>
-
       <div className='app_leftbar'>
         <Overview />
       </div>
-
       <div className='app_main'>
         <div className={isMapActive ? 'app_main_map mobile_active' : 'app_main_map mobile_inactive'}>
           <Map />
@@ -78,7 +68,6 @@ function App() {
           <Charts />
         </div>
       </div>
-
       <div className='app_chatbot'>
         <div className={isChatbotInactive ? 'chatbot_container inactive' : 'chatbot_container active'}>
           <ChatbotContainer />
@@ -86,6 +75,15 @@ function App() {
         <PersonIcon class='chatbot_icon' onClick={handleChatbotToggle} />
       </div>
 
+      {/* MOBILE */}
+      <div className='app_topbar desktop_inactive'>
+        <MapIcon class='icon_map' onClick={handleMap} />
+        <div className='topbar_text'>
+          <h1>nadpis</h1>
+          <p>432423</p>
+        </div>
+        <ShowChartIcon class='icon_chart' onClick={handleCharts} />
+      </div>
       <div className='desktop_inactive'>
         <div className='forms_mobile_icon_container'>
           <a
