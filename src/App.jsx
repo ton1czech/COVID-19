@@ -50,6 +50,34 @@ function App() {
     window.scrollTo(0, window.innerHeight * 1.2);
   };
 
+  // fetch('https://disease.sh/v3/covid-19/countries/cz?strict=true')
+  // const getData = () => {
+  //   fetch('https://disease.sh/v3/covid-19/all')
+  //   .then((response) => {return response.json()})
+  //   .then((ww_data) => {pushData(ww_data)})
+  // }
+
+  // var dataList = [
+  //   document.getElementById('ww_cases_data').innerHTML = ww_data.todayCases.toLocaleString('cz-CZ', {
+  //     minimunFractionDigits: 3,
+  //   }),
+  //   document.getElementById('ww_recovered_data').innerHTML = ww_data.todayRecovered.toLocaleString('cz-CZ', {
+  //     minimunFractionDigits: 3,
+  //   }),
+  //   document.getElementById('ww_deaths_data').innerHTML = ww_data.todayDeaths.toLocaleString('cz-CZ', {
+  //     minimunFractionDigits: 3,
+  //   })]
+  //   document.getElementById('cz_cases_data').innerHTML = cz_data.todayCases.toLocaleString('cz-CZ', {
+  //     minimunFractionDigits: 3,
+  //   }),
+  //   document.getElementById('cz_recovered_data').innerHTML = cz_data.todayRecovered.toLocaleString('cz-CZ', {
+  //     minimunFractionDigits: 3,
+  //   }),
+  //   document.getElementById('cz_deaths_data').innerHTML = cz_data.todayDeaths.toLocaleString('cz-CZ', {
+  //     minimunFractionDigits: 3,
+  //   })
+  // ];
+
   return (
     <div className='app'>
       <div className='app_leftbar'>
