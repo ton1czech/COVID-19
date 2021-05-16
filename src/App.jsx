@@ -79,11 +79,12 @@ function App() {
       <div className='app_topbar desktop_inactive'>
         <MapIcon class='icon_map' onClick={handleMap} />
         <div className='topbar_text'>
-          <h1>nadpis</h1>
-          <p>432423</p>
+          <h1 id='data_header'>nadpis</h1>
+          <p id='data_body'>432423</p>
         </div>
         <ShowChartIcon class='icon_chart' onClick={handleCharts} />
       </div>
+
       <div className='desktop_inactive'>
         <div className='forms_mobile_icon_container'>
           <a
