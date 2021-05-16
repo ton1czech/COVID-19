@@ -47,7 +47,7 @@ function App() {
   };
 
   const scrollDown = () => {
-    window.scrollBy(0, window.innerHeight);
+    window.scrollTo(0, window.innerHeight * 1.2);
   };
 
   return (
