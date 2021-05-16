@@ -16,26 +16,23 @@ Webová aplikace bude sloužit pro souhrnný přehled dat o viru COVID-19, také
 
 ## 📜 Log
 
-- **17.04.2021** - _create-react-app_
-- **17.04.2021** - _README_
-- **17.04.2021** - _Flex layout_
-- **17.04.2021** - _Map_
-- **18.04.2021** - _Overview style_
-- **18.04.2021** - _replacing .js with .jsx_
-- **18.04.2021** - _leaflet map settings_
-- **18.04.2021** - _responsiveness_
+- **17.04.2021** - _první řádka_
+- **17.04.2021** - _flex layout_
+- **17.04.2021** - _leaflet mapa_
+- **18.04.2021** - _overview styl_
+- **18.04.2021** - _používání .jsx namísto .js_
+- **18.04.2021** - _leaflet map nastavení_
+- **18.04.2021** - _reponsivnost_
 - **22.04.2021** - _chatbot_
-- **25.04.2021** - _Microsoft forms_
-- **29.04.2021** - _major chatbot improvements_
-- **30.04.2021** - _purple ui_
-- **09.05.2021** - _mobile responsiveness_
-- **10.05.2021** - _chatbot is 100% functional_
-- **10.05.2021** - _custom chatbot header and avatar_
-- **10.05.2021** - _more changes on chatbot_
-- **10.05.2021** - _mobile version styling_
-- **11.05.2021** - _custom chatbot placeholder_
-- **11.05.2021** - _clickable Map and Chart icons_
-- **12.05.2021** - _replacing .css with .scss_
+- **25.04.2021** - _microsoft forms_
+- **29.04.2021** - _vylepšení chatbota_
+- **30.04.2021** - _fialové ui_
+- **09.05.2021** - _podpora mobilních telefonů_
+- **10.05.2021** - _chatbot je 100% funkční_
+- **10.05.2021** - _designové úpravy chatbota_
+- **10.05.2021** - _design na mobilní telefony_
+- **11.05.2021** - _funkčnost na mobilních telefonech_
+- **12.05.2021** - _používání .scss namísto .css_
 
 ---
 
