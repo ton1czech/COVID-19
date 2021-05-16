@@ -64,15 +64,8 @@ body {
   margin: 19px;
   z-index: 9;
 
-  .chatbot_container {
-    position: fixed;
-  }
-
   .chatbot_icon {
     width: 3.5vw;
-    margin: 340px 0 -10px 280px;
-    right: 3;
-    bottom: 3;
     cursor: pointer;
   }
 }
