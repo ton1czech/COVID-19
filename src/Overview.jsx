@@ -8,9 +8,15 @@ const Overview = () => {
     .then((ww_data) => displayWWData(ww_data));
 
   const displayWWData = (ww_data) => {
-    document.getElementsByClassName('ww_cases')[0].innerHTML = ww_data.todayCases;
-    document.getElementsByClassName('ww_recovered')[0].innerHTML = ww_data.todayRecovered;
-    document.getElementsByClassName('ww_deaths')[0].innerHTML = ww_data.todayDeaths;
+    document.getElementsByClassName('ww_cases')[0].innerHTML = ww_data.todayCases.toLocaleString('cz-CZ', {
+      minimunFractionDigits: 3,
+    });
+    document.getElementsByClassName('ww_recovered')[0].innerHTML = ww_data.todayRecovered.toLocaleString('cz-CZ', {
+      minimunFractionDigits: 3,
+    });
+    document.getElementsByClassName('ww_deaths')[0].innerHTML = ww_data.todayDeaths.toLocaleString('cz-CZ', {
+      minimunFractionDigits: 3,
+    });
   };
 
   fetch('https://disease.sh/v3/covid-19/countries/cz?strict=true')
@@ -18,9 +24,15 @@ const Overview = () => {
     .then((cz_data) => displayCZData(cz_data));
 
   const displayCZData = (cz_data) => {
-    document.getElementsByClassName('cz_cases')[0].innerHTML = cz_data.todayCases;
-    document.getElementsByClassName('cz_recovered')[0].innerHTML = cz_data.todayRecovered;
-    document.getElementsByClassName('cz_deaths')[0].innerHTML = cz_data.todayDeaths;
+    document.getElementsByClassName('cz_cases')[0].innerHTML = cz_data.todayCases.toLocaleString('cz-CZ', {
+      minimunFractionDigits: 3,
+    });
+    document.getElementsByClassName('cz_recovered')[0].innerHTML = cz_data.todayRecovered.toLocaleString('cz-CZ', {
+      minimunFractionDigits: 3,
+    });
+    document.getElementsByClassName('cz_deaths')[0].innerHTML = cz_data.todayDeaths.toLocaleString('cz-CZ', {
+      minimunFractionDigits: 3,
+    });
   };
 
   return (
