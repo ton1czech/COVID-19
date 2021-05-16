@@ -3,6 +3,26 @@ import './scss/App_MOBILE.scss';
 import React from 'react';
 
 const Overview = () => {
+  fetch('https://disease.sh/v3/covid-19/all')
+    .then((ww_res) => ww_res.json())
+    .then((ww_data) => displayWWData(ww_data));
+
+  const displayWWData = (ww_data) => {
+    document.getElementsByClassName('ww_cases')[0].innerHTML = ww_data.todayCases;
+    document.getElementsByClassName('ww_recovered')[0].innerHTML = ww_data.todayRecovered;
+    document.getElementsByClassName('ww_deaths')[0].innerHTML = ww_data.todayDeaths;
+  };
+
+  fetch('https://disease.sh/v3/covid-19/countries/cz?strict=true')
+    .then((cz_res) => cz_res.json())
+    .then((cz_data) => displayCZData(cz_data));
+
+  const displayCZData = (cz_data) => {
+    document.getElementsByClassName('cz_cases')[0].innerHTML = cz_data.todayCases;
+    document.getElementsByClassName('cz_recovered')[0].innerHTML = cz_data.todayRecovered;
+    document.getElementsByClassName('cz_deaths')[0].innerHTML = cz_data.todayDeaths;
+  };
+
   return (
     <div className='overview'>
       <div className='ww'>
