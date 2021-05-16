@@ -8,13 +8,13 @@ const Overview = () => {
     .then((ww_data) => displayWWData(ww_data));
 
   const displayWWData = (ww_data) => {
-    document.getElementsByClassName('ww_cases')[0].innerHTML = ww_data.todayCases.toLocaleString('cz-CZ', {
+    document.getElementById('ww_cases_data').innerHTML = ww_data.todayCases.toLocaleString('cz-CZ', {
       minimunFractionDigits: 3,
     });
-    document.getElementsByClassName('ww_recovered')[0].innerHTML = ww_data.todayRecovered.toLocaleString('cz-CZ', {
+    document.getElementById('ww_recovered_data').innerHTML = ww_data.todayRecovered.toLocaleString('cz-CZ', {
       minimunFractionDigits: 3,
     });
-    document.getElementsByClassName('ww_deaths')[0].innerHTML = ww_data.todayDeaths.toLocaleString('cz-CZ', {
+    document.getElementById('ww_deaths_data').innerHTML = ww_data.todayDeaths.toLocaleString('cz-CZ', {
       minimunFractionDigits: 3,
     });
   };
@@ -24,13 +24,13 @@ const Overview = () => {
     .then((cz_data) => displayCZData(cz_data));
 
   const displayCZData = (cz_data) => {
-    document.getElementsByClassName('cz_cases')[0].innerHTML = cz_data.todayCases.toLocaleString('cz-CZ', {
+    document.getElementById('cz_cases_data').innerHTML = cz_data.todayCases.toLocaleString('cz-CZ', {
       minimunFractionDigits: 3,
     });
-    document.getElementsByClassName('cz_recovered')[0].innerHTML = cz_data.todayRecovered.toLocaleString('cz-CZ', {
+    document.getElementById('cz_recovered_data').innerHTML = cz_data.todayRecovered.toLocaleString('cz-CZ', {
       minimunFractionDigits: 3,
     });
-    document.getElementsByClassName('cz_deaths')[0].innerHTML = cz_data.todayDeaths.toLocaleString('cz-CZ', {
+    document.getElementById('cz_deaths_data').innerHTML = cz_data.todayDeaths.toLocaleString('cz-CZ', {
       minimunFractionDigits: 3,
     });
   };
@@ -41,30 +41,30 @@ const Overview = () => {
         <h1 className='header'>CELOSVĚTOVĚ</h1>
         <div className='ww_container'>
           <h2>Dnešní nové případy</h2>
-          <p className='ww_cases'></p>
+          <p id='ww_cases_data'></p>
         </div>
         <div className='ww_container'>
           <h2>Dnešní počet vyléčení</h2>
-          <p className='ww_recovered'></p>
+          <p id='ww_recovered_data'></p>
         </div>
         <div className='ww_container'>
           <h2>Dnešní počet úmrtí</h2>
-          <p className='ww_deaths'></p>
+          <p id='ww_deaths_data'></p>
         </div>
       </div>
       <div className='cz'>
         <h1 className='header'>V ČR</h1>
         <div className='cz_container'>
           <h2>Dnešní nové případy</h2>
-          <p className='cz_cases'></p>
+          <p id='cz_cases_data'></p>
         </div>
         <div className='cz_container'>
           <h2>Dnešní počet vyléčení</h2>
-          <p className='cz_recovered'></p>
+          <p id='cz_recovered_data'></p>
         </div>
         <div className='cz_container'>
           <h2>Dnešní počet úmrtí</h2>
-          <p className='cz_deaths'></p>
+          <p id='cz_deaths_data'></p>
         </div>
       </div>
       <div className='forms'>
