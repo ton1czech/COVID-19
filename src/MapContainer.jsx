@@ -1,19 +1,19 @@
-import './scss/Map.scss';
+import './scss/MapContainer.scss';
 import './scss/App_MOBILE.scss';
 import React from 'react';
-import { MapContainer, TileLayer } from 'react-leaflet';
+import { Map, TileLayer } from 'react-leaflet';
 
-const Map = () => {
+const MapContainer = () => {
   return (
     <div className='map'>
-      <MapContainer center={[50.051, 14.251]} zoom={3} minZoom={3} scrollWheelZoom={true}>
+      <Map center={[50.051, 14.251]} zoom={3} minZoom={3} scrollWheelZoom={true}>
         <TileLayer
           url='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png'
           attribution='&copy; <a href="http://osm.org/copyright">OpenStreetMap</a> contributors'
         />
-      </MapContainer>
+      </Map>
     </div>
   );
 };
 
-export default Map;
+export default MapContainer;

@@ -8,7 +8,7 @@ import MessageIcon from '@material-ui/icons/Message';
 
 import ChatbotContainer from './ChatbotContainer';
 import Overview from './Overview';
-import Map from './Map';
+import MapContainer from './MapContainer';
 import Charts from './Charts';
 
 function App() {
@@ -85,7 +85,7 @@ function App() {
       </div>
       <div className='app_main'>
         <div className={isMapActive ? 'app_main_map _mobile-active' : 'app_main_map _mobile-inactive'}>
-          <Map />
+          <MapContainer />
         </div>
 
         <div className={isChartsActive ? 'app_main_charts _mobile-active' : 'app_main_charts _mobile-inactive'}>
