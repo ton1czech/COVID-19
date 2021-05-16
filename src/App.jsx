@@ -50,6 +50,33 @@ function App() {
     window.scrollTo(0, window.innerHeight * 1.2);
   };
 
+  // var titleList = [
+  //   (document.getElementById('_data-title').innerHTML = 'Dnešní případy (Celosvětově)'),
+  //   (document.getElementById('_data-title').innerHTML = 'Dnešní vyléčení (Celosvětově)'),
+  //   (document.getElementById('_data-title').innerHTML = 'Dnešní úmrtí (Celosvětově)'),
+  //   (document.getElementById('_data-title').innerHTML = 'Dnešní případy (CZ)'),
+  //   (document.getElementById('_data-title').innerHTML = 'Dnešní vyléčení (CZ)'),
+  //   (document.getElementById('_data-title').innerHTML = 'Dnešní úmrtí (CZ)'),
+  // ];
+
+  var titleArray = [
+    'Dnešní případy (Celosvětově)',
+    'Dnešní vyléčení (Celosvětově)',
+    'Dnešní úmrtí (Celosvětově)',
+    'Dnešní případy (CZ)',
+    'Dnešní vyléčení (CZ)',
+    'Dnešní úmrtí (CZ)',
+  ];
+
+  for (var i = 0; i < titleArray.length; i++) {
+    (function (i) {
+      setTimeout(function () {
+        document.getElementById('_data-title').innerHTML = titleArray[i];
+        console.log(titleArray[i]);
+      }, 10000 * i);
+    })(i);
+  }
+
   // fetch('https://disease.sh/v3/covid-19/countries/cz?strict=true')
   // const getData = () => {
   //   fetch('https://disease.sh/v3/covid-19/all')
@@ -106,8 +133,8 @@ function App() {
       <div className='app_topbar _desktop-inactive'>
         <MapIcon class='icon_map' onClick={handleMap} />
         <div className='topbar_text'>
-          <h1 id='data_header'>nadpis</h1>
-          <p id='data_body'>432423</p>
+          <h1 id='_data-title'> </h1>
+          <p id='_data-values'>432423</p>
         </div>
         <ShowChartIcon class='icon_chart' onClick={handleCharts} />
       </div>
