@@ -1,8 +1,8 @@
-# COVID-19 analýza
+# [COVID-19 analýza](https://czcovid19.netlify.app)
 
 ## 🌍 O Aplikaci
 
-Webová aplikace bude sloužit pro souhrnný přehled dat o viru COVID-19, také bude zajišťovat informace o průběhu této nemoci. Bude možné si prohlédnout data všech zemí.
+Webová aplikace bude sloužit pro souhrnný přehled dat o viru COVID-19, také bude zajišťovat informace o průběhu této nemoci. Na mapě si můžete prohlédnout, kde COVID-19 zasahuje nejvíce nebo kde se ho nejvíce daří zneškodnit. V další sekci aplikace uvidíte vizualizace. V naší aplikaci se dokonce můžete zeptat chatbota na veškeré otázky ohledně COVIDU-19, které Vás zajímají. Samozřejmě nechybí promyšlený mobilní design, takže se můžete na analýzu podívat odkudkoliv na Vašem mobilním zařízení.
 
 ---
 
