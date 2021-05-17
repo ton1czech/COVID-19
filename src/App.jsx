@@ -59,41 +59,65 @@ function App() {
     'Dnešní úmrtí (CZ)',
   ];
 
-  for (let i = 0; i < titleArray.length; i++) {
-    (function (i) {
-      setTimeout(function () {
-        document.getElementById('_data-title').innerHTML = titleArray[i];
-      }, 3000 * i);
-    })(i);
-  }
+  let titleCounter = 0;
+  setInterval(() => {
+    document.getElementById('_data-title').innerHTML = titleArray[titleCounter];
+    if (titleCounter === titleArray.length - 1) {
+      titleCounter = 0;
+    } else {
+      titleCounter++;
+    }
+  }, 2000);
 
-  // fetch('https://disease.sh/v3/covid-19/countries/cz?strict=true')
-  // const getData = () => {
-  //   fetch('https://disease.sh/v3/covid-19/all')
-  //   .then((response) => {return response.json()})
-  //   .then((ww_data) => {pushData(ww_data)})
-  // }
+  fetch('https://disease.sh/v3/covid-19/countries/cz?strict=true')
+    .then((cz_res) => cz_res.json())
+    .then((cz_data) => getCZValues(cz_data));
 
-  // var dataList = [
-  //   document.getElementById('ww_cases_data').innerHTML = ww_data.todayCases.toLocaleString('cz-CZ', {
-  //     minimunFractionDigits: 3,
-  //   }),
-  //   document.getElementById('ww_recovered_data').innerHTML = ww_data.todayRecovered.toLocaleString('cz-CZ', {
-  //     minimunFractionDigits: 3,
-  //   }),
-  //   document.getElementById('ww_deaths_data').innerHTML = ww_data.todayDeaths.toLocaleString('cz-CZ', {
-  //     minimunFractionDigits: 3,
-  //   })]
-  //   document.getElementById('cz_cases_data').innerHTML = cz_data.todayCases.toLocaleString('cz-CZ', {
-  //     minimunFractionDigits: 3,
-  //   }),
-  //   document.getElementById('cz_recovered_data').innerHTML = cz_data.todayRecovered.toLocaleString('cz-CZ', {
-  //     minimunFractionDigits: 3,
-  //   }),
-  //   document.getElementById('cz_deaths_data').innerHTML = cz_data.todayDeaths.toLocaleString('cz-CZ', {
-  //     minimunFractionDigits: 3,
-  //   })
-  // ];
+  fetch('https://disease.sh/v3/covid-19/all')
+    .then((ww_res) => ww_res.json())
+    .then((ww_data) => getWWValues(ww_data));
+
+  var CZValuesArray = [];
+  var WWValuesArray = [];
+  var valueArray = [];
+
+  const getWWValues = (ww_data) => {
+    WWValuesArray = [
+      ww_data.todayCases.toLocaleString('cz-CZ', {
+        minimunFractionDigits: 3,
+      }),
+      ww_data.todayRecovered.toLocaleString('cz-CZ', {
+        minimunFractionDigits: 3,
+      }),
+      ww_data.todayDeaths.toLocaleString('cz-CZ', {
+        minimunFractionDigits: 3,
+      }),
+    ];
+  };
+
+  const getCZValues = (cz_data) => {
+    CZValuesArray = [
+      cz_data.todayCases.toLocaleString('cz-CZ', {
+        minimunFractionDigits: 3,
+      }),
+      cz_data.todayRecovered.toLocaleString('cz-CZ', {
+        minimunFractionDigits: 3,
+      }),
+      cz_data.todayDeaths.toLocaleString('cz-CZ', {
+        minimunFractionDigits: 3,
+      }),
+    ];
+  };
+
+  let valueCounter = 0;
+  setInterval(() => {
+    document.getElementById('_data-value').innerHTML = valueArray[valueCounter];
+    if (valueCounter === valueArray.length - 1) {
+      valueCounter = 0;
+    } else {
+      valueCounter++;
+    }
+  }, 2000);
 
   return (
     <div className='app'>
@@ -124,7 +148,7 @@ function App() {
         <MapIcon class='icon_map' onClick={handleMap} />
         <div className='topbar_text'>
           <h1 id='_data-title'> </h1>
-          <p id='_data-values'>432423</p>
+          <p id='_data-value'></p>
         </div>
         <ShowChartIcon class='icon_chart' onClick={handleCharts} />
       </div>
