@@ -59,65 +59,39 @@ function App() {
     'Dnešní úmrtí (CZ)',
   ];
 
-  let titleCounter = 0;
-  setInterval(() => {
-    document.getElementById('_data-title').innerHTML = titleArray[titleCounter];
-    if (titleCounter === titleArray.length - 1) {
-      titleCounter = 0;
-    } else {
-      titleCounter++;
-    }
-  }, 2000);
+  let valueArray = [];
+  fetch('https://disease.sh/v3/covid-19/all')
+    .then((res) => res.json())
+    .then((data) => {
+      valueArray.push(
+        Object.values(data)[2].toLocaleString('cz-CZ'),
+        Object.values(data)[6].toLocaleString('cz-CZ'),
+        Object.values(data)[4].toLocaleString('cz-CZ')
+      );
+      return valueArray;
+    });
 
   fetch('https://disease.sh/v3/covid-19/countries/cz?strict=true')
-    .then((cz_res) => cz_res.json())
-    .then((cz_data) => getCZValues(cz_data));
+    .then((res) => res.json())
+    .then((data) => {
+      valueArray.push(
+        Object.values(data)[4].toLocaleString('cz-CZ'),
+        Object.values(data)[8].toLocaleString('cz-CZ'),
+        Object.values(data)[6].toLocaleString('cz-CZ')
+      );
+      return valueArray;
+    });
 
-  fetch('https://disease.sh/v3/covid-19/all')
-    .then((ww_res) => ww_res.json())
-    .then((ww_data) => getWWValues(ww_data));
-
-  var CZValuesArray = [];
-  var WWValuesArray = [];
-  var valueArray = [];
-
-  const getWWValues = (ww_data) => {
-    WWValuesArray = [
-      ww_data.todayCases.toLocaleString('cz-CZ', {
-        minimunFractionDigits: 3,
-      }),
-      ww_data.todayRecovered.toLocaleString('cz-CZ', {
-        minimunFractionDigits: 3,
-      }),
-      ww_data.todayDeaths.toLocaleString('cz-CZ', {
-        minimunFractionDigits: 3,
-      }),
-    ];
-  };
-
-  const getCZValues = (cz_data) => {
-    CZValuesArray = [
-      cz_data.todayCases.toLocaleString('cz-CZ', {
-        minimunFractionDigits: 3,
-      }),
-      cz_data.todayRecovered.toLocaleString('cz-CZ', {
-        minimunFractionDigits: 3,
-      }),
-      cz_data.todayDeaths.toLocaleString('cz-CZ', {
-        minimunFractionDigits: 3,
-      }),
-    ];
-  };
-
-  let valueCounter = 0;
+  let counter = 0;
   setInterval(() => {
-    document.getElementById('_data-value').innerHTML = valueArray[valueCounter];
-    if (valueCounter === valueArray.length - 1) {
-      valueCounter = 0;
+    document.getElementById('_data-title').innerHTML = titleArray[counter];
+    document.getElementById('_data-value').innerHTML = valueArray[counter];
+    if (counter === valueArray.length - 1) {
+      counter = 0;
     } else {
-      valueCounter++;
+      counter++;
     }
-  }, 2000);
+  }, 5000);
 
   return (
     <div className='app'>
@@ -147,7 +121,7 @@ function App() {
       <div className='app_topbar _desktop-inactive'>
         <MapIcon class='icon_map' onClick={handleMap} />
         <div className='topbar_text'>
-          <h1 id='_data-title'> </h1>
+          <h1 id='_data-title'>Načítání...</h1>
           <p id='_data-value'></p>
         </div>
         <ShowChartIcon class='icon_chart' onClick={handleCharts} />
