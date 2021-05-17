@@ -4,35 +4,23 @@ import React from 'react';
 
 const Overview = () => {
   fetch('https://disease.sh/v3/covid-19/all')
-    .then((ww_res) => ww_res.json())
-    .then((ww_data) => displayWWData(ww_data));
+    .then((res) => res.json())
+    .then((data) => displayWWData(data));
 
-  const displayWWData = (ww_data) => {
-    document.getElementById('ww_cases_data').innerHTML = ww_data.todayCases.toLocaleString('cz-CZ', {
-      minimunFractionDigits: 3,
-    });
-    document.getElementById('ww_recovered_data').innerHTML = ww_data.todayRecovered.toLocaleString('cz-CZ', {
-      minimunFractionDigits: 3,
-    });
-    document.getElementById('ww_deaths_data').innerHTML = ww_data.todayDeaths.toLocaleString('cz-CZ', {
-      minimunFractionDigits: 3,
-    });
+  const displayWWData = (data) => {
+    document.getElementById('ww_cases_data').innerHTML = data.todayCases.toLocaleString('cz-CZ');
+    document.getElementById('ww_recovered_data').innerHTML = data.todayRecovered.toLocaleString('cz-CZ');
+    document.getElementById('ww_deaths_data').innerHTML = data.todayDeaths.toLocaleString('cz-CZ');
   };
 
   fetch('https://disease.sh/v3/covid-19/countries/cz?strict=true')
-    .then((cz_res) => cz_res.json())
-    .then((cz_data) => displayCZData(cz_data));
+    .then((res) => res.json())
+    .then((data) => displayCZData(data));
 
-  const displayCZData = (cz_data) => {
-    document.getElementById('cz_cases_data').innerHTML = cz_data.todayCases.toLocaleString('cz-CZ', {
-      minimunFractionDigits: 3,
-    });
-    document.getElementById('cz_recovered_data').innerHTML = cz_data.todayRecovered.toLocaleString('cz-CZ', {
-      minimunFractionDigits: 3,
-    });
-    document.getElementById('cz_deaths_data').innerHTML = cz_data.todayDeaths.toLocaleString('cz-CZ', {
-      minimunFractionDigits: 3,
-    });
+  const displayCZData = (data) => {
+    document.getElementById('cz_cases_data').innerHTML = data.todayCases.toLocaleString('cz-CZ');
+    document.getElementById('cz_recovered_data').innerHTML = data.todayRecovered.toLocaleString('cz-CZ');
+    document.getElementById('cz_deaths_data').innerHTML = data.todayDeaths.toLocaleString('cz-CZ');
   };
 
   return (
