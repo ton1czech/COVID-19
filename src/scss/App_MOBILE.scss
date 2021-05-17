@@ -88,7 +88,7 @@
   .map {
     position: absolute;
     width: 96vw !important;
-    height: 68vh !important;
+    height: 64vh !important;
     top: 50%;
     left: 50%;
     margin: -34vh 0 0 -48vw !important;
@@ -100,10 +100,10 @@
     top: 0;
     left: 50%;
     transform: translate(-50%, 0);
-    margin: 90px 0 !important;
+    margin: 16.5vh 0 !important;
 
     .charts_container {
-      height: 75vh !important;
+      height: 64vh !important;
       overflow: scroll;
     }
 
