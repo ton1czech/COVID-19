@@ -83,15 +83,34 @@ function App() {
     });
 
   let counter = 0;
-  setInterval(() => {
-    document.getElementById('_data-title').innerHTML = titleArray[counter];
-    document.getElementById('_data-value').innerHTML = valueArray[counter];
-    if (counter === valueArray.length - 1) {
-      counter = 0;
-    } else {
-      counter++;
-    }
-  }, 5000);
+  const changer = (counter, titleArray, valueArray) => {
+    setTimeout(() => {
+      document.getElementById('_data-title').innerHTML = titleArray[counter];
+      document.getElementById('_data-value').innerHTML = valueArray[counter];
+    }, 500);
+    setInterval(() => {
+      document.getElementById('_data-title').innerHTML = titleArray[counter];
+      document.getElementById('_data-value').innerHTML = valueArray[counter];
+      if (counter === valueArray.length - 1) {
+        counter = 0;
+      } else {
+        counter++;
+      }
+    }, 5000);
+  };
+
+  changer(counter, titleArray, valueArray);
+
+  // let counter = 0;
+  // setInterval(() => {
+  //   document.getElementById('_data-title').innerHTML = titleArray[counter];
+  //   document.getElementById('_data-value').innerHTML = valueArray[counter];
+  //   if (counter === valueArray.length - 1) {
+  //     counter = 0;
+  //   } else {
+  //     counter++;
+  //   }
+  // }, 5000);
 
   return (
     <div className='app'>
@@ -121,7 +140,7 @@ function App() {
       <div className='app_topbar _desktop-inactive'>
         <MapIcon class='icon_map' onClick={handleMap} />
         <div className='topbar_text'>
-          <h1 id='_data-title'>Načítání...</h1>
+          <h1 id='_data-title'>{''}</h1>
           <p id='_data-value'></p>
         </div>
         <ShowChartIcon class='icon_chart' onClick={handleCharts} />
