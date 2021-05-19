@@ -1,8 +1,8 @@
 # [COVID-19 analýza](https://czcovid19.netlify.app)
 
 <table><tr>
-    <td><img src="https://i.imgur.com/D7t5JPi.png" /></td>
-    <td><img src="https://i.imgur.com/iiv7mZV.png" width="580"/></td>
+    <td><h1 style="text-align: center;">Desktop</h1><img src="https://i.imgur.com/D7t5JPi.png" width="1920"/></td>
+    <td><h1 style="text-align: center;">Mobile</h1><img src="https://i.imgur.com/iiv7mZV.png" width="545"/></td>
 </tr></table>
 
 ## 🌍 O Aplikaci
@@ -16,6 +16,7 @@ Webová aplikace bude sloužit pro souhrnný přehled dat o viru COVID-19, také
 - <img src='https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F09%2FReact_logo_logotype_emblem.png&f=1&nofb=1' height="13"> [React](https://reactjs.org/)
 - <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F9%2F99%2FUnofficial_JavaScript_logo_2.svg%2F1200px-Unofficial_JavaScript_logo_2.svg.png&f=1&nofb=1' height="13"> [JavaScript](https://www.javascript.com/)
 - <img src='https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Fvanseodesign.com%2Fblog%2Fwp-content%2Fuploads%2F2015%2F09%2Fsass-logo-2.png&f=1&nofb=1' height="13"> [Sass](https://sass-lang.com/)
+- <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.freelogovectors.net%2Fwp-content%2Fuploads%2F2017%2F04%2Fpower-bi-logo.png&f=1&nofb=1' height="13"> [PowerBI](https://powerbi.microsoft.com/en-us/)
 
 ---
 
