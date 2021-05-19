@@ -9,7 +9,7 @@ const Options = (props) => {
       handler: props.actionProvider.incubationTime,
       id: 1,
     },
-    { text: 'Hlavní příznaky', handler: props.actionProvider.symptoms, id: 2 },
+    { text: 'Příznaky', handler: props.actionProvider.symptoms, id: 2 },
     { text: 'Druhy vakcín', handler: props.actionProvider.vaccines, id: 3 },
     { text: 'Nárok na bezplatné testování', handler: props.actionProvider.tests, id: 4 },
     { text: 'Průběh', handler: props.actionProvider.progress, id: 5 },

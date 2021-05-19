@@ -6,7 +6,7 @@ class ActionProvider {
   }
 
   fallback = () => {
-    const message = this.createChatBotMessage('Omlouvám sem, nerozuměl jsem Vaší otázce.');
+    const message = this.createChatBotMessage('Omlouvám se, nerozuměl jsem Vaší otázce.');
     this.setChatbotMessage(message);
   };
 
