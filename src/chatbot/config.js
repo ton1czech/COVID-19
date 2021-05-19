@@ -27,7 +27,6 @@ const config = {
           backgroundColor: '#2b064d',
           color: '#fff',
           padding: '5px',
-          borderRadius: '5px',
         }}
       >
         <h1 style={{ position: 'relative', margin: 'auto', fontSize: '22px' }}>COVID19 CHATBOT</h1>
