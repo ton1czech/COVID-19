@@ -90,29 +90,29 @@
   // map
   .map {
     position: absolute;
-    width: 96vw !important;
-    height: 64vh !important;
+    width: 95vw !important;
+    height: 62vh !important;
     top: 50%;
     left: 50%;
-    margin: -34vh 0 0 -48vw !important;
+    transform: translate(-50%, -50%);
   }
 
   // charts
   .charts {
     position: absolute;
-    top: 0;
+    top: 50%;
     left: 50%;
-    transform: translate(-50%, 0);
-    margin: 16.5vh 0 !important;
+    transform: translate(-50%, -50%);
+    margin: 0 !important;
 
     .charts_container {
-      height: 64vh !important;
+      height: 62vh !important;
       overflow: scroll;
     }
 
     .chart {
       margin-bottom: 20px !important;
-      width: 92vw !important;
+      width: 95vw !important;
     }
   }
 
