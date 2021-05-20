@@ -54,5 +54,9 @@
     margin: 2vw 0 0 0;
     width: 5vw;
     cursor: pointer;
+
+    &:hover {
+      width: 4.9vw;
+    }
   }
 }

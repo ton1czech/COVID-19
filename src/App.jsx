@@ -1,6 +1,8 @@
 import './scss/App.scss';
 import './scss/App_MOBILE.scss';
 import React, { useState } from 'react';
+import 'boxicons';
+
 import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import MapIcon from '@material-ui/icons/Map';
 import ShowChartIcon from '@material-ui/icons/ShowChart';
@@ -47,7 +49,7 @@ function App() {
   };
 
   const scrollDown = () => {
-    window.scrollTo(0, window.innerHeight * 1.2);
+    window.scrollTo(0, window.innerHeight * 1.1);
   };
 
   var titleArray = [
@@ -105,15 +107,23 @@ function App() {
         <Overview />
       </div>
       <div className='app_main'>
-        <div className={isMapActive ? 'app_main_map _mobile-active' : 'app_main_map _mobile-inactive'}>
+        <div className={isMapActive ? '_mobile-active' : '_mobile-inactive'}>
           <MapContainer />
         </div>
 
-        <div className={isChartsActive ? 'app_main_charts _mobile-active' : 'app_main_charts _mobile-inactive'}>
+        <div className={isChartsActive ? '_mobile-active' : '_mobile-inactive'}>
           <Charts />
         </div>
       </div>
-      <ArrowDownwardIcon class='icon_arrow _mobile-inactive' onClick={scrollDown} />
+
+      <box-icon
+        type='solid'
+        name='down-arrow-alt'
+        class='icon_arrow _mobile-inactive'
+        onClick={scrollDown}
+        animation='tada-hover'
+      ></box-icon>
+
       <div className='app_chatbot'>
         <div
           className={isChatbotInactive ? 'chatbot_container _chatbot-inactive' : 'chatbot_container _chatbot-active'}

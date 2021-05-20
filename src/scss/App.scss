@@ -45,14 +45,13 @@ body {
   display: flex;
   width: 75vw;
   background: $primary-color-light;
-  margin: 0 2.5% 0 0;
   color: black;
 }
 
 // main
 .app_main {
   height: max-content;
-  padding: 1vw 0 0 0;
+  margin: 0 0 0 2.5%;
 }
 
 // chatbot
@@ -69,17 +68,21 @@ body {
     background-color: $primary-color-light;
     border-radius: 50%;
     padding: 5px;
+
+    &:hover {
+      width: 3.45vw;
+    }
   }
 }
 
 // arrow
 .icon_arrow {
-  animation: icon_arrow_animation 2s infinite;
+  animation: icon_arrow_animation 2s infinite ease-out;
   position: relative;
   display: flex;
   cursor: pointer;
   z-index: 999;
-  width: 24vw;
+  width: 30vw;
   height: min-content;
   right: 50vw;
   transform: translate(50%, 0);
@@ -89,9 +92,9 @@ body {
 
 @keyframes icon_arrow_animation {
   from {
-    top: 93vh;
+    top: 90vh;
   }
   to {
-    top: 95vh;
+    top: 94.1vh;
   }
 }
