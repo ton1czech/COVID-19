@@ -83,7 +83,7 @@ function App() {
     });
 
   let counter = 0;
-  const changer = (counter, titleArray, valueArray) => {
+  (function (counter, titleArray, valueArray) {
     setTimeout(() => {
       document.getElementById('_data-title').innerHTML = titleArray[counter];
       document.getElementById('_data-value').innerHTML = valueArray[counter];
@@ -97,20 +97,7 @@ function App() {
         counter++;
       }
     }, 5000);
-  };
-
-  changer(counter, titleArray, valueArray);
-
-  // let counter = 0;
-  // setInterval(() => {
-  //   document.getElementById('_data-title').innerHTML = titleArray[counter];
-  //   document.getElementById('_data-value').innerHTML = valueArray[counter];
-  //   if (counter === valueArray.length - 1) {
-  //     counter = 0;
-  //   } else {
-  //     counter++;
-  //   }
-  // }, 5000);
+  })(counter, titleArray, valueArray);
 
   return (
     <div className='app'>
