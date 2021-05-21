@@ -3,7 +3,6 @@ import './scss/App_MOBILE.scss';
 import React, { useState } from 'react';
 import 'boxicons';
 
-import ArrowDownwardIcon from '@material-ui/icons/ArrowDownward';
 import MapIcon from '@material-ui/icons/Map';
 import ShowChartIcon from '@material-ui/icons/ShowChart';
 import MessageIcon from '@material-ui/icons/Message';

@@ -1,9 +1,27 @@
+._chart-open {
+  height: 100%;
+}
+
+._chart-close {
+  height: 5vh;
+}
+
 .charts {
+  h1 {
+    text-align: center;
+    text-transform: uppercase;
+  }
+
   margin-top: 300px;
   z-index: 10;
 
-  .chart {
+  .chart_wrapper {
     width: 76vw;
-    margin-bottom: 160px;
+    margin-bottom: 100px;
+    cursor: pointer;
+
+    .chart {
+      width: 100%;
+    }
   }
 }

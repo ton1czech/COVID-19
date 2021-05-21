@@ -19,6 +19,14 @@
     display: inline;
   }
 
+  ._chart-close {
+    height: 100% !important;
+  }
+
+  ._chart-open {
+    height: 100% !important;
+  }
+
   /* ========== STYLING ========== */
 
   // topbar
@@ -110,9 +118,11 @@
       overflow: scroll;
     }
 
-    .chart {
-      margin-bottom: 20px !important;
+    .chart_wrapper {
       width: 95vw !important;
+      margin-bottom: 25px !important;
+      pointer-events: none;
+      cursor: auto;
     }
   }
 
