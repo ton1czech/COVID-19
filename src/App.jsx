@@ -1,6 +1,6 @@
 import './scss/App.scss';
 import './scss/App_MOBILE.scss';
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import 'boxicons';
 
 import MapIcon from '@material-ui/icons/Map';
@@ -61,34 +61,38 @@ function App() {
   ];
 
   let valueArray = [];
-  fetch('https://disease.sh/v3/covid-19/all')
-    .then((res) => res.json())
-    .then((data) => {
-      valueArray.push(
-        Object.values(data)[2].toLocaleString('cz-CZ'),
-        Object.values(data)[6].toLocaleString('cz-CZ'),
-        Object.values(data)[4].toLocaleString('cz-CZ')
-      );
-      return valueArray;
-    });
+  useEffect(() => {
+    fetch('https://disease.sh/v3/covid-19/all')
+      .then((res) => res.json())
+      .then((data) => {
+        valueArray.push(
+          Object.values(data)[2].toLocaleString('cz-CZ'),
+          Object.values(data)[6].toLocaleString('cz-CZ'),
+          Object.values(data)[4].toLocaleString('cz-CZ')
+        );
+        return valueArray;
+      });
+  }, []);
 
-  fetch('https://disease.sh/v3/covid-19/countries/cz?strict=true')
-    .then((res) => res.json())
-    .then((data) => {
-      valueArray.push(
-        Object.values(data)[4].toLocaleString('cz-CZ'),
-        Object.values(data)[8].toLocaleString('cz-CZ'),
-        Object.values(data)[6].toLocaleString('cz-CZ')
-      );
-      return valueArray;
-    });
+  useEffect(() => {
+    fetch('https://disease.sh/v3/covid-19/countries/cz?strict=true')
+      .then((res) => res.json())
+      .then((data) => {
+        valueArray.push(
+          Object.values(data)[4].toLocaleString('cz-CZ'),
+          Object.values(data)[8].toLocaleString('cz-CZ'),
+          Object.values(data)[6].toLocaleString('cz-CZ')
+        );
+        return valueArray;
+      });
+  }, []);
 
   let counter = 0;
   (function (counter, titleArray, valueArray) {
     setTimeout(() => {
       document.getElementById('_data-title').innerHTML = titleArray[counter];
       document.getElementById('_data-value').innerHTML = valueArray[counter];
-    }, 500);
+    }, 600);
     setInterval(() => {
       document.getElementById('_data-title').innerHTML = titleArray[counter];
       document.getElementById('_data-value').innerHTML = valueArray[counter];

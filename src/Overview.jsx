@@ -1,11 +1,13 @@
 import './scss/Overview.scss';
 import './scss/App_MOBILE.scss';
-import React from 'react';
+import React, { useEffect } from 'react';
 
 const Overview = () => {
-  fetch('https://disease.sh/v3/covid-19/all')
-    .then((res) => res.json())
-    .then((data) => displayWWData(data));
+  useEffect(() => {
+    fetch('https://disease.sh/v3/covid-19/all')
+      .then((res) => res.json())
+      .then((data) => displayWWData(data));
+  });
 
   const displayWWData = (data) => {
     document.getElementById('ww_cases_data').innerHTML = data.todayCases.toLocaleString('cz-CZ');
@@ -13,9 +15,11 @@ const Overview = () => {
     document.getElementById('ww_deaths_data').innerHTML = data.todayDeaths.toLocaleString('cz-CZ');
   };
 
-  fetch('https://disease.sh/v3/covid-19/countries/cz?strict=true')
-    .then((res) => res.json())
-    .then((data) => displayCZData(data));
+  useEffect(() => {
+    fetch('https://disease.sh/v3/covid-19/countries/cz?strict=true')
+      .then((res) => res.json())
+      .then((data) => displayCZData(data));
+  }, []);
 
   const displayCZData = (data) => {
     document.getElementById('cz_cases_data').innerHTML = data.todayCases.toLocaleString('cz-CZ');
