@@ -21,17 +21,23 @@ function App() {
     setChatbotInactive(!isChatbotInactive);
     document.getElementsByClassName('react-chatbot-kit-chat-input')[0].placeholder = 'Zde zadejte svůj dotaz.';
 
-    if (document.getElementsByClassName('leaflet-container')[0].style.zIndex === '5') {
-      document.getElementsByClassName('leaflet-container')[0].style.zIndex = '10';
-    } else if ((document.getElementsByClassName('leaflet-container')[0].style.zIndex = '10')) {
-      document.getElementsByClassName('leaflet-container')[0].style.zIndex = '5';
-    }
+    try {
+      const leafletMap = document.getElementsByClassName('leaflet-container')[0].style.zIndex;
+      if (leafletMap === '5') {
+        leafletMap = '10';
+      } else if ((leafletMap = '10')) {
+        leafletMap = '5';
+      }
+    } catch (error) {}
 
-    if (document.getElementsByClassName('charts')[0].style.zIndex === '5') {
-      document.getElementsByClassName('charts')[0].style.zIndex = '10';
-    } else if ((document.getElementsByClassName('charts')[0].style.zIndex = '10')) {
-      document.getElementsByClassName('charts')[0].style.zIndex = '5';
-    }
+    try {
+      const chartsToggle = document.getElementsByClassName('charts')[0].style.zIndex;
+      if (chartsToggle === '5') {
+        chartsToggle = '10';
+      } else if ((chartsToggle = '10')) {
+        chartsToggle = '5';
+      }
+    } catch (error) {}
   };
 
   const handleMap = () => {
@@ -69,7 +75,7 @@ function App() {
         );
         return valueArray;
       });
-  }, []);
+  });
 
   useEffect(() => {
     fetch('https://disease.sh/v3/covid-19/countries/cz?strict=true')
@@ -82,7 +88,7 @@ function App() {
         );
         return valueArray;
       });
-  }, []);
+  });
 
   let counter = 0;
   (function (counter, titleArray, valueArray) {
