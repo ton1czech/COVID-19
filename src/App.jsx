@@ -17,9 +17,6 @@ function App() {
   const [isMapActive, setMapActive] = useState(true);
   const [isChartsActive, setChartsActive] = useState(false);
 
-  const setMapInactive = () => setMapActive(false);
-  const setChartsInactive = () => setChartsActive(false);
-
   const handleChatbotToggle = () => {
     setChatbotInactive(!isChatbotInactive);
     document.getElementsByClassName('react-chatbot-kit-chat-input')[0].placeholder = 'Zde zadejte svůj dotaz.';
@@ -38,12 +35,12 @@ function App() {
   };
 
   const handleMap = () => {
-    setChartsInactive();
+    setChartsActive(false);
     setMapActive(!isMapActive);
   };
 
   const handleCharts = () => {
-    setMapInactive();
+    setMapActive(false);
     setChartsActive(!isChartsActive);
   };
 
