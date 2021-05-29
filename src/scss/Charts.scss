@@ -7,20 +7,16 @@
 }
 
 .charts {
+  margin-top: 300px;
+  z-index: 10;
+
   h1 {
     text-align: center;
     text-transform: uppercase;
   }
 
-  margin-top: 300px;
-  z-index: 10;
-
-  .charts_container {
+  .chart {
     width: 76vw;
-
-    .chart {
-      margin-bottom: 100px;
-      width: 100%;
-    }
+    margin-bottom: 160px;
   }
 }
