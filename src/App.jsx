@@ -19,25 +19,19 @@ function App() {
 
   const handleChatbotToggle = () => {
     setChatbotInactive(!isChatbotInactive);
+
     document.getElementsByClassName('react-chatbot-kit-chat-input')[0].placeholder = 'Zde zadejte svůj dotaz.';
+    if (document.getElementsByClassName('leaflet-container')[0].style.zIndex === '5') {
+      document.getElementsByClassName('leaflet-container')[0].style.zIndex = '10';
+    } else if ((document.getElementsByClassName('leaflet-container')[0].style.zIndex = '10')) {
+      document.getElementsByClassName('leaflet-container')[0].style.zIndex = '5';
+    }
 
-    try {
-      const leafletMap = document.getElementsByClassName('leaflet-container')[0].style.zIndex;
-      if (leafletMap === '5') {
-        leafletMap = '10';
-      } else if ((leafletMap = '10')) {
-        leafletMap = '5';
-      }
-    } catch (error) {}
-
-    try {
-      const chartsToggle = document.getElementsByClassName('charts')[0].style.zIndex;
-      if (chartsToggle === '5') {
-        chartsToggle = '10';
-      } else if ((chartsToggle = '10')) {
-        chartsToggle = '5';
-      }
-    } catch (error) {}
+    if (document.getElementsByClassName('charts')[0].style.zIndex === '5') {
+      document.getElementsByClassName('charts')[0].style.zIndex = '10';
+    } else if ((document.getElementsByClassName('charts')[0].style.zIndex = '10')) {
+      document.getElementsByClassName('charts')[0].style.zIndex = '5';
+    }
   };
 
   const handleMap = () => {
@@ -64,31 +58,29 @@ function App() {
   ];
 
   let valueArray = [];
-  useEffect(() => {
-    fetch('https://disease.sh/v3/covid-19/all')
-      .then((res) => res.json())
-      .then((data) => {
-        valueArray.push(
-          Object.values(data)[2].toLocaleString('cz-CZ'),
-          Object.values(data)[6].toLocaleString('cz-CZ'),
-          Object.values(data)[4].toLocaleString('cz-CZ')
-        );
-        return valueArray;
-      });
-  });
+  (async function fetchWWData() {
+    const res = await fetch('https://disease.sh/v3/covid-19/all');
+    const data = await res.json();
+    valueArray.push(
+      Object.values(data)[2].toLocaleString('cz-CZ'),
+      Object.values(data)[6].toLocaleString('cz-CZ'),
+      Object.values(data)[4].toLocaleString('cz-CZ')
+    );
 
-  useEffect(() => {
-    fetch('https://disease.sh/v3/covid-19/countries/cz?strict=true')
-      .then((res) => res.json())
-      .then((data) => {
-        valueArray.push(
-          Object.values(data)[4].toLocaleString('cz-CZ'),
-          Object.values(data)[8].toLocaleString('cz-CZ'),
-          Object.values(data)[6].toLocaleString('cz-CZ')
-        );
-        return valueArray;
-      });
-  });
+    return valueArray;
+  })();
+
+  (async function fetchCZData() {
+    const res = await fetch('https://disease.sh/v3/covid-19/countries/cz?strict=true');
+    const data = await res.json();
+    valueArray.push(
+      Object.values(data)[4].toLocaleString('cz-CZ'),
+      Object.values(data)[8].toLocaleString('cz-CZ'),
+      Object.values(data)[6].toLocaleString('cz-CZ')
+    );
+
+    return valueArray;
+  })();
 
   let counter = 0;
   (function (counter, titleArray, valueArray) {
@@ -143,7 +135,7 @@ function App() {
       <div className='app_topbar _desktop-inactive'>
         <MapIcon class='icon_map' onClick={handleMap} />
         <div className='topbar_text'>
-          <h1 id='_data-title'>{''}</h1>
+          <h1 id='_data-title'></h1>
           <p id='_data-value'></p>
         </div>
         <ShowChartIcon class='icon_chart' onClick={handleCharts} />

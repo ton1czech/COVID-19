@@ -116,13 +116,11 @@
     .charts_container {
       height: 62vh !important;
       overflow: scroll;
-    }
 
-    .chart_wrapper {
-      width: 95vw !important;
-      margin-bottom: 25px !important;
-      pointer-events: none;
-      cursor: auto;
+      .chart {
+        width: 95vw !important;
+        margin: 0 0 25px 0;
+      }
     }
   }
 

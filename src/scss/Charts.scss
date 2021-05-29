@@ -15,12 +15,11 @@
   margin-top: 300px;
   z-index: 10;
 
-  .chart_wrapper {
+  .charts_container {
     width: 76vw;
-    margin-bottom: 100px;
-    cursor: pointer;
 
     .chart {
+      margin-bottom: 100px;
       width: 100%;
     }
   }
