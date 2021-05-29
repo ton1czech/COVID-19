@@ -1,6 +1,6 @@
 import './scss/App.scss';
 import './scss/App_MOBILE.scss';
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 import 'boxicons';
 
 import MapIcon from '@material-ui/icons/Map';
@@ -135,7 +135,7 @@ function App() {
       <div className='app_topbar _desktop-inactive'>
         <MapIcon class='icon_map' onClick={handleMap} />
         <div className='topbar_text'>
-          <h1 id='_data-title'></h1>
+          <h1 id='_data-title'>{''}</h1>
           <p id='_data-value'></p>
         </div>
         <ShowChartIcon class='icon_chart' onClick={handleCharts} />
