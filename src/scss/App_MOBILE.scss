@@ -99,7 +99,7 @@
   .map {
     position: absolute;
     width: 95vw !important;
-    height: 62vh !important;
+    height: 38vh !important;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -119,6 +119,7 @@
 
       .chart {
         width: 95vw !important;
+        height: 65vw !important;
         margin: 0 0 20px 0 !important;
       }
     }
@@ -173,16 +174,8 @@
     width: 280px !important;
   }
 
-  // map
-  .map {
-    height: 58vh !important;
-    margin: -32vh 0 0 -48vw !important;
-  }
-
   // charts
   .charts {
-    margin: 19vh 0 !important;
-
     .charts_container {
       height: 58vh !important;
     }

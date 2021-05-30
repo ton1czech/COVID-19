@@ -6,20 +6,19 @@ const Charts = () => {
   const chartsData = [
     {
       header: 'Data z formuláře',
-      source: 'https://i.imgur.com/LqJlRHp.jpeg',
-      alt: 'form data',
+      source: '',
       id: 1,
     },
     {
-      header: 'Celosvětová data',
-      source: 'https://i.imgur.com/LqJlRHp.jpeg',
-      alt: 'worldwide data',
+      header: 'Kontinenty',
+      source:
+        'https://app.powerbi.com/view?r=eyJrIjoiODI3OTYxNTktM2ZhNy00NjkzLTgyZGItZTJjMjdkNDlhMDdlIiwidCI6IjMwZmQ2ZDAxLTk1NjYtNDMxMC1iMjI1LTE3ODRiZjExNjc1YyIsImMiOjh9',
       id: 2,
     },
     {
-      header: 'Česká data',
-      source: 'https://i.imgur.com/LqJlRHp.jpeg',
-      alt: 'czech data',
+      header: 'Státy',
+      source:
+        'https://app.powerbi.com/view?r=eyJrIjoiNjAzODk2OGYtN2EzZS00NGZkLTg5ZjItOTFiMDE3N2Q0YWMyIiwidCI6IjMwZmQ2ZDAxLTk1NjYtNDMxMC1iMjI1LTE3ODRiZjExNjc1YyIsImMiOjh9',
       id: 3,
     },
   ];
@@ -27,10 +26,10 @@ const Charts = () => {
   return (
     <div className='charts'>
       <div className='charts_container'>
-        {chartsData.map(({ header, source, alt }, id) => (
+        {chartsData.map(({ header, source }, id) => (
           <div key={id}>
             <h1>{header}</h1>
-            <img className='chart' src={source} alt={alt}></img>
+            <iframe title='chart' src={source} className='chart'></iframe>
           </div>
         ))}
       </div>

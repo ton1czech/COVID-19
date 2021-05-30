@@ -6,11 +6,9 @@ const Map = () => {
   return (
     <div className='map'>
       <iframe
-        className='map_iframe'
         title='map'
         src='https://app.powerbi.com/view?r=eyJrIjoiZTFiMjQ3NzAtMGNmMS00YWIyLTg4NTAtMDIxOTIxZTAwZjNlIiwidCI6IjMwZmQ2ZDAxLTk1NjYtNDMxMC1iMjI1LTE3ODRiZjExNjc1YyIsImMiOjh9'
-        frameborder='0'
-        allowFullScreen='false'
+        className='map_iframe'
       ></iframe>
     </div>
   );
