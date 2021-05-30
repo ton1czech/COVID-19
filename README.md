@@ -1,8 +1,13 @@
 # [COVID-19 analýza](https://czcovid19.netlify.app)
 
 <table><tr>
-    <td><h1 style="text-align: center;">Desktop</h1><img src="https://i.imgur.com/D7t5JPi.png" width="1920"/></td>
-    <td><h1 style="text-align: center;">Mobile</h1><img src="https://i.imgur.com/iiv7mZV.png" width="545"/></td>
+    <td><h1 style="text-align: center;">Desktop</h1><img src="https://i.imgur.com/hASWuOH.png" /></td>
+    <td><h1 style="text-align: center;">Mobile</h1><img src="https://i.imgur.com/2FSfccH.png" /></td>
+</tr></table>
+
+<table><tr>
+    <td><img src="https://i.imgur.com/bj8bf7e.png" /></td>
+    <td><img src="https://i.imgur.com/xtcNC7r.png" /></td>
 </tr></table>
 
 ## 🌍 O Aplikaci
@@ -39,6 +44,10 @@ Webová aplikace bude sloužit pro souhrnný přehled dat o viru COVID-19, také
 - **10.05.2021** - _design na mobilní telefony_
 - **11.05.2021** - _funkčnost na mobilních telefonech_
 - **12.05.2021** - _používání .scss namísto .css_
+- **13.05.2021** - _designové vylepšení chatbota_
+- **15.05.2021** - _reálná data_
+- **16.05.2021** - _otázky na chatbota_
+- **30.05.2021** - _PowerBI vizualizace_
 
 ---
 
