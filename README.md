@@ -2,12 +2,12 @@
 
 <table><tr>
     <td><h1 style="text-align: center;">Desktop</h1><img src="https://i.imgur.com/hASWuOH.png" /></td>
-    <td><h1 style="text-align: center;">Mobile</h1><img src="https://i.imgur.com/2FSfccH.png" /></td>
+    <td><h1 style="text-align: center;">Mobile</h1><img src="https://i.imgur.com/2FSfccH.png" width="550"/></td>
 </tr></table>
 
 <table><tr>
     <td><img src="https://i.imgur.com/bj8bf7e.png" /></td>
-    <td><img src="https://i.imgur.com/xtcNC7r.png" /></td>
+    <td><img src="https://i.imgur.com/xtcNC7r.png" width="550" /></td>
 </tr></table>
 
 ## 🌍 O Aplikaci
