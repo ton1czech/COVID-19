@@ -47,7 +47,8 @@ Webová aplikace bude sloužit pro souhrnný přehled dat o viru COVID-19, také
 - **13.05.2021** - _designové vylepšení chatbota_
 - **15.05.2021** - _reálná data_
 - **16.05.2021** - _otázky na chatbota_
-- **30.05.2021** - _PowerBI vizualizace_
+- **30.05.2021** - _PowerBI vizualizace (kontinenty, státy)_
+- **31.05.2021** - _PowerBI vizualizace (forms)_
 
 ---
 
