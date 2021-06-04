@@ -98,7 +98,7 @@
   .map {
     position: absolute;
     width: 95vw !important;
-    height: 38vh !important;
+    height: 64vh !important;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -157,6 +157,11 @@
   .react-chatbot-kit-chat-message-container {
     height: 245px !important;
     width: 280px !important;
+  }
+
+  //map
+  .map {
+    height: 54vh !important;
   }
 
   // charts
