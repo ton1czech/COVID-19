@@ -86,25 +86,6 @@ const Overview = () => {
           </div>
         ))}
       </div>
-      <div className='forms'>
-        <h2>
-          Prosíme o vyplnění našeho krátkého <br /> formuláře ohledně COVIDU-19
-        </h2>
-        <p>(Formulář je zcela anonymní)</p>
-        <div className='forms_icon_container'>
-          <a
-            target='_blank'
-            rel='noopener noreferrer'
-            href='https://forms.office.com/Pages/ResponsePage.aspx?id=AW39MGaVEEOyJReEvxFnXMjxamHwNP9Cqeem8s6Dwe1UNUxUVVA4WE00RlM1TUg1NjFMSk9TMFlHRy4u'
-          >
-            <img
-              className='forms_icon'
-              src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Microsoft_Forms_(2019-present).svg/1200px-Microsoft_Forms_(2019-present).svg.png'
-              alt='Microsoft Forms icon'
-            />
-          </a>
-        </div>
-      </div>
     </div>
   );
 };
