@@ -1,6 +1,4 @@
 .overview {
-  text-align: center;
-  margin-left: 0.9vw;
   position: fixed;
 
   h1 {
@@ -21,6 +19,8 @@
 }
 
 .overview_container {
+  text-align: center;
+
   .header {
     margin-bottom: 25px;
   }
@@ -32,4 +32,31 @@
 
 .ww {
   margin: 20px 0 50px 0;
+}
+
+.forms {
+  text-align: center;
+  position: relative;
+  bottom: -20vh;
+  margin: 1vw;
+
+  h2 {
+    text-transform: none;
+    font-size: 0.8vw;
+  }
+
+  p {
+    font-size: 0.65vw;
+  }
+
+  .forms_icon {
+    position: relative;
+    margin: 2vw 0 0 0;
+    width: 5vw;
+    cursor: pointer;
+
+    &:hover {
+      width: 4.9vw;
+    }
+  }
 }

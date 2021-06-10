@@ -9,7 +9,7 @@ import MessageIcon from '@material-ui/icons/Message';
 
 import ChatbotContainer from './ChatbotContainer';
 import Overview from './Overview';
-import MapContainer from './MapContainer';
+import Map from './Map';
 import Charts from './Charts';
 
 function App() {
@@ -21,10 +21,10 @@ function App() {
     setChatbotInactive(!isChatbotInactive);
 
     document.getElementsByClassName('react-chatbot-kit-chat-input')[0].placeholder = 'Zde zadejte svůj dotaz.';
-    if (document.getElementsByClassName('leaflet-container')[0].style.zIndex === '5') {
-      document.getElementsByClassName('leaflet-container')[0].style.zIndex = '10';
-    } else if ((document.getElementsByClassName('leaflet-container')[0].style.zIndex = '10')) {
-      document.getElementsByClassName('leaflet-container')[0].style.zIndex = '5';
+    if (document.getElementsByClassName('map')[0].style.zIndex === '5') {
+      document.getElementsByClassName('map')[0].style.zIndex = '10';
+    } else if ((document.getElementsByClassName('map')[0].style.zIndex = '10')) {
+      document.getElementsByClassName('map')[0].style.zIndex = '5';
     }
 
     if (document.getElementsByClassName('charts')[0].style.zIndex === '5') {
@@ -106,7 +106,7 @@ function App() {
       </div>
       <div className='app_main'>
         <div className={isMapActive ? '_mobile-active' : '_mobile-inactive'}>
-          <MapContainer />
+          <Map />
         </div>
 
         <div className={isChartsActive ? '_mobile-active' : '_mobile-inactive'}>
@@ -139,6 +139,22 @@ function App() {
           <p id='_data-value'></p>
         </div>
         <ShowChartIcon class='icon_chart' onClick={handleCharts} />
+      </div>
+
+      <div className='_desktop-inactive'>
+        <div className='forms_mobile_icon_container'>
+          <a
+            target='_blank'
+            rel='noopener noreferrer'
+            href='https://forms.office.com/Pages/ResponsePage.aspx?id=AW39MGaVEEOyJReEvxFnXMjxamHwNP9Cqeem8s6Dwe1UNUxUVVA4WE00RlM1TUg1NjFMSk9TMFlHRy4u'
+          >
+            <img
+              className='forms_mobile_icon'
+              src='https://upload.wikimedia.org/wikipedia/commons/thumb/0/09/Microsoft_Forms_(2019-present).svg/1200px-Microsoft_Forms_(2019-present).svg.png'
+              alt='Microsoft Forms icon'
+            />
+          </a>
+        </div>
       </div>
     </div>
   );

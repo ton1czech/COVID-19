@@ -7,8 +7,9 @@
   margin: 1vw 0 0 0;
   border: 5px solid $primary-color-dark;
 
-  .leaflet-container {
+  .map_iframe {
     height: 100%;
+    width: 100%;
     z-index: 10;
   }
 }

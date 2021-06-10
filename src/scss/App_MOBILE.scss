@@ -83,6 +83,7 @@
       width: 13vw;
       height: 13vw;
       right: 14px;
+      // bottom: -15px;
       bottom: -50%;
       transform: translate(0, -50%);
       cursor: pointer;
@@ -98,7 +99,7 @@
   .map {
     position: absolute;
     width: 95vw !important;
-    height: 64vh !important;
+    height: 38vh !important;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -138,6 +139,20 @@
     right: 14px !important;
     bottom: 17px;
   }
+
+  // forms
+  .forms_mobile_icon_container {
+    position: fixed;
+    bottom: 17px;
+    left: 14px;
+
+    .forms_mobile_icon {
+      background-color: $primary-color-light;
+      border-radius: 50%;
+      padding: 5px;
+      width: 13vw;
+    }
+  }
 }
 
 /* ========== SMALL SIZEZ SCREEN ========== */
@@ -157,11 +172,6 @@
   .react-chatbot-kit-chat-message-container {
     height: 245px !important;
     width: 280px !important;
-  }
-
-  //map
-  .map {
-    height: 54vh !important;
   }
 
   // charts
