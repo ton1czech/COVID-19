@@ -10,13 +10,13 @@
     <td><img src="https://i.imgur.com/xtcNC7r.png" width="550" /></td>
 </tr></table>
 
-## 🌍 O Aplikaci
+## 🌍 About
 
-Webová aplikace bude sloužit pro souhrnný přehled dat o viru COVID-19, také bude zajišťovat informace o průběhu této nemoci. Na mapě si můžete prohlédnout, kde COVID-19 zasahuje nejvíce nebo kde se ho nejvíce daří zneškodnit. V další sekci aplikace uvidíte vizualizace. V naší aplikaci se dokonce můžete zeptat chatbota na veškeré otázky ohledně COVIDU-19, které Vás zajímají. Samozřejmě nechybí promyšlený mobilní design, takže se můžete na analýzu podívat odkudkoliv na Vašem mobilním zařízení.
+The web application will be used to summarise data on the COVID-19 virus and will also provide information on the course of the disease. On the map, you can see where COVID-19 is hitting the hardest or where it has been most successfully eliminated. In another section of the app, you will see visualizations. You can even ask the chatbot any questions you have about COVID-19. Of course, there's no shortage of thoughtful mobile design, so you can look at the analysis from anywhere on your mobile device.
 
 ---
 
-## 🖥️ Technologie
+## 🖥️ Technologies
 
 - <img src='https://external-content.duckduckgo.com/iu/?u=http%3A%2F%2Flogos-download.com%2Fwp-content%2Fuploads%2F2016%2F09%2FReact_logo_logotype_emblem.png&f=1&nofb=1' height="13"> [React](https://reactjs.org/)
 - <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2Fthumb%2F9%2F99%2FUnofficial_JavaScript_logo_2.svg%2F1200px-Unofficial_JavaScript_logo_2.svg.png&f=1&nofb=1' height="13"> [JavaScript](https://www.javascript.com/)
@@ -25,45 +25,10 @@ Webová aplikace bude sloužit pro souhrnný přehled dat o viru COVID-19, také
 
 ---
 
-## 📜 Log
-
-- **17.04.2021** - _první řádka_
-- **17.04.2021** - _flex layout_
-- **17.04.2021** - _leaflet mapa_
-- **18.04.2021** - _overview styl_
-- **18.04.2021** - _používání .jsx namísto .js_
-- **18.04.2021** - _leaflet map nastavení_
-- **18.04.2021** - _reponsivnost_
-- **22.04.2021** - _chatbot_
-- **25.04.2021** - _microsoft forms_
-- **29.04.2021** - _vylepšení chatbota_
-- **30.04.2021** - _fialové ui_
-- **09.05.2021** - _podpora mobilních telefonů_
-- **10.05.2021** - _chatbot je 100% funkční_
-- **10.05.2021** - _designové úpravy chatbota_
-- **10.05.2021** - _design na mobilní telefony_
-- **11.05.2021** - _funkčnost na mobilních telefonech_
-- **12.05.2021** - _používání .scss namísto .css_
-- **13.05.2021** - _designové vylepšení chatbota_
-- **15.05.2021** - _reálná data_
-- **16.05.2021** - _otázky na chatbota_
-- **30.05.2021** - _Power BI vizualizace (kontinenty, státy)_
-- **31.05.2021** - _Power BI vizualizace (forms)_
-
----
-
-## 👩‍💻👨‍💻 Autoři
+## 👩‍💻 Author
 
 Daniel Anthony Baudyš:
 
 - <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F4%2F4e%2FGmail_Icon.png&f=1&nofb=1' height='13'> E-mail - tonyasek007@gmail.com
 - <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwebstockreview.net%2Fimages%2Ftwitter-icon-transparent-png-5.png&f=1&nofb=1' height='13'> Twitter - [@ton1czech](https://twitter.com/ton1czech)
 - <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatesborodowntown.com%2Fwp-content%2Fuploads%2F2016%2F01%2Finstagram-Logo-PNG-Transparent-Background-download.png&f=1&nofb=1' height='13'> Instagram - [@ton1czech](https://instagram.com/ton1czech)
-
-<br />
-
-Barbora Karlovská:
-
-- <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fupload.wikimedia.org%2Fwikipedia%2Fcommons%2F4%2F4e%2FGmail_Icon.png&f=1&nofb=1' height="13"> E-mail - kbarboraaaa@gmail.com
-- <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fstatesborodowntown.com%2Fwp-content%2Fuploads%2F2016%2F01%2Finstagram-Logo-PNG-Transparent-Background-download.png&f=1&nofb=1' height='13'> Instagram - [@k_barboraaa](https://instagram.com/k_barboraaa)
-- <img src='https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fwebstockreview.net%2Fimages%2Ftwitter-icon-transparent-png-5.png&f=1&nofb=1' height='13'> Twitter - [@k_barboraaa](https://twitter.com/k_barboraaa)
